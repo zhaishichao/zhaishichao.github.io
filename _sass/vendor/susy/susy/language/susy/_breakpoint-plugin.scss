@@ -171,8 +171,8 @@ $_susy-media-context: ();
   } @else if type-of($query) == list and length($query) == 2 {
     @if type-of(nth($query, 1)) == number {
       $mq: (
-        min-width: min($query...),
-        max-width: max($query...),
+        min-width: min($query),
+        max-width: max($query),
       );
     } @else {
       $mq: (nth($query, 1): nth($query, 2));
