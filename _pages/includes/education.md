@@ -1,12 +1,10 @@
 # ‍🎓 Education
 - [**Soochow University**](https://www.suda.edu.cn/) <img class="svg" src="./images/logo_soochow.svg" width="30pt">
-  - Sep.2024-Present 
+  - 2024.09 - Present, Suzhou, China 
   - **Guaranteed Graduate Admission**
   - Master of Artificial Intelligence
   - [School of Future Technology and Engineering](https://future.suda.edu.cn/)
-  - Suzhou, China
 - [**Henan University of Technology**](https://www.haut.edu.cn/) <img class="svg" src="./images/logo_haut.svg" width="30pt">
-  - Sep.2020-Jun.2024
+  - 2020.09 - 2024.06, Zhengzhou, China
   - Bachelor of Software Engineering
   - [School of Artificial Intelligence and Big Data](https://aidata.haut.edu.cn/)
-  - Zhengzhou, China
