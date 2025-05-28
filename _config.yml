@@ -21,9 +21,9 @@ baidu_site_verification  : code-ZxFK3f4pfb
 
 # Site Author
 author:
-  name             : "Shichao Zhai (翟士超)"
+  name             : "Shichao Zhai"
   avatar           : "images/profile.jpg"
-  bio              : "Soochow University, "
+  bio              : "Soochow University"
   location         : "Suzhou, Jiangsu, China"
   employer         :
   pubmed           : 
@@ -43,7 +43,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "zhaishichao"
+  linkedin         : #"zhaishichao"
   dblp             : "https://dblp.org/pid/75/6568-6.html"
   orcid            : "https://orcid.org/0000-0002-9160-3848"
   pinterest        :
