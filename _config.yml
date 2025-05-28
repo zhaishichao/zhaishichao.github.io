@@ -6,10 +6,10 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Yi Ren (任意)"
-description              : "Focusing on video and speech large generation model."
-repository               : "rayeren/rayeren.github.io"
-google_scholar_stats_use_cdn : true
+title                    : "Shichao Zhai (翟士超)"
+description              : "Focusing on evolutionary intelligence and imbalanced learning."
+repository               : "zhaishichao/zhaishichao.github.io"
+google_scholar_stats_use_cdn : false
 
 # google analytics
 google_analytics_id      : G-SWFCX99KQZ
@@ -21,10 +21,10 @@ baidu_site_verification  : code-ZxFK3f4pfb
 
 # Site Author
 author:
-  name             : "Yi Ren (任意)"
-  avatar           : "images/ry_profile.jpeg"
-  bio              : ""
-  location         : "Singapore"
+  name             : "Shichao Zhai (翟士超)"
+  avatar           : "images/profile.jpg"
+  bio              : "Soochow University, "
+  location         : "Suzhou, Jiangsu, China"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=4FA6C0AAAAAJ"
@@ -37,13 +37,13 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "RayeRen"
+  github           : "zhaishichao"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "rayeren"
+  linkedin         : "zhaishichao"
   dblp             : "https://dblp.org/pid/75/6568-6.html"
   orcid            : "https://orcid.org/0000-0002-9160-3848"
   pinterest        :
