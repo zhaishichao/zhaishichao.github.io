@@ -3,8 +3,8 @@ main:
   - title: "About Me"
     url: "/#about-me"
 
-  - title: "Education"
-    url: "/#-education"
+  - title: "Educations"
+    url: "/#-educations"
 
   - title: "Publications"
     url: "/#-publications"
@@ -16,7 +16,7 @@ main:
     url: "/#-honors-and-awards"
 
 
-  - title: "Academic conferences"
+  - title: "Academic Conferences"
     url: "/#-academic-conferences"
 
 

@@ -1,4 +1,4 @@
-# ‍🎓 Education
+# ‍🎓 Educations
 - [**<span style="color: #0580d7;">Soochow University</span>**](https://www.suda.edu.cn/) <img class="svg" src="./images/logo_soochow.svg" width="30pt">
   - 2024.09 - Present, Suzhou, China 
   - **Guaranteed Graduate Admission**

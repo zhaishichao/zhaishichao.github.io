@@ -1,4 +1,4 @@
-# 💻 Internship
+# 💻 Internships
 - iFLYTEK(科大讯飞)<img src="./images/iflytec.jpg" width="55pt">, Research Institute of Zhengzhou, Henan
 - Time: 2024.04 - 2024.08
 - Project: **Development of social service platform**
