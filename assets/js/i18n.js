@@ -87,6 +87,7 @@ const I18N = {
     'pub.pdf':               { en: 'PDF',               cn: '论文' },
     'pub.code':              { en: 'Code',              cn: '代码' },
     'pub.coming':            { en: 'Coming soon...',    cn: '敬请期待...' },
+    'pub.mile-note':         { en: '(CAS Q1 Top, Top Journal in Field, First Author)', cn: '（中科院一区Top，领域顶刊，第一作者）' },
 
     /* Projects */
     'proj.role':             { en: 'Role: ',            cn: '担任角色：' },
