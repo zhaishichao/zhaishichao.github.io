@@ -39,97 +39,7 @@
             <p data-i18n="blog.travel.desc">Travel journals, landscape photography, videos, and stories from the road.</p>
         </div>
 
-        <div class="article-list">
-
-            <!-- Travel Post 1: with images -->
-            <article class="travel-post">
-                <h2 class="travel-location">
-                    <span>🏔️</span> Huangshan (Yellow Mountain), Anhui
-                </h2>
-                <span class="travel-date">2025.03.22</span>
-
-                <div class="media-gallery">
-                    <a href="#lightbox-img1"><img src="imgs/huangshan-1.jpg" alt="Huangshan sunrise" loading="lazy" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22><rect fill=%22%23e0e4e8%22 width=%22400%22 height=%22300%22/><text x=%22200%22 y=%22155%22 text-anchor=%22middle%22 fill=%22%23999%22>🏔️ Sunrise</text></svg>'"></a>
-                    <a href="#lightbox-img2"><img src="imgs/huangshan-2.jpg" alt="Cloud sea view" loading="lazy" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22><rect fill=%22%23e0e4e8%22 width=%22400%22 height=%22300%22/><text x=%22200%22 y=%22155%22 text-anchor=%22middle%22 fill=%22%23999%22>☁️ Cloud Sea</text></svg>'"></a>
-                </div>
-
-                <p class="travel-note">
-                    Climbing Huangshan in early spring was an unforgettable experience. The granite peaks piercing through
-                    the sea of clouds at sunrise, the ancient pine trees clinging to rocky cliffs, and the stone steps
-                    carved into impossibly steep slopes — all of it was a powerful reminder that the best views come after
-                    the hardest climbs. The West Sea Grand Canyon was especially breathtaking, with mist rolling through
-                    the valleys like a living painting.
-                </p>
-
-                <div class="article-tags">
-                    <span class="article-tag" data-i18n="tag.mountains">Mountains</span>
-                    <span class="article-tag" data-i18n="tag.nature">Nature</span>
-                    <span class="article-tag" data-i18n="tag.anhui">Anhui</span>
-                    <span class="article-tag" data-i18n="tag.unesco">UNESCO Heritage</span>
-                </div>
-            </article>
-
-            <!-- Travel Post 2: with video -->
-            <article class="travel-post">
-                <h2 class="travel-location">
-                    <span>🏙️</span> Suzhou Classical Gardens
-                </h2>
-                <span class="travel-date">2024.10.05</span>
-
-                <div class="media-video">
-                    <video controls preload="metadata" poster="imgs/suzhou-poster.jpg" style="width:100%;">
-                        <source src="videos/suzhou-gardens.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-
-                <p class="travel-note">
-                    Living in Suzhou means having access to some of the most exquisite classical gardens in China.
-                    The Humble Administrator's Garden in autumn, with its golden ginkgo leaves reflected in the still ponds,
-                    feels like stepping into a Ming Dynasty scroll painting. Every turn reveals a carefully composed scene —
-                    a pavilion framed by rockeries, a winding corridor over lotus ponds, bamboo shadows on whitewashed walls.
-                </p>
-
-                <div class="article-tags">
-                    <span class="article-tag" data-i18n="tag.gardens">Gardens</span>
-                    <span class="article-tag" data-i18n="tag.suzhou">Suzhou</span>
-                    <span class="article-tag" data-i18n="tag.culture">Culture</span>
-                    <span class="article-tag" data-i18n="tag.unesco">UNESCO Heritage</span>
-                </div>
-            </article>
-
-            <!-- Travel Post 3: with audio -->
-            <article class="travel-post">
-                <h2 class="travel-location">
-                    <span>🌊</span> Taihu Lake Cycling Trip
-                </h2>
-                <span class="travel-date">2024.09.14</span>
-
-                <p class="travel-note">
-                    A 120km cycling loop around the eastern shore of Taihu Lake with lab mates. The road winds through
-                    fishing villages, tea plantations, and wetlands filled with migratory birds. The flat terrain makes it
-                    an ideal weekend ride, and the sunset over the lake — with fishermen's boats silhouetted against
-                    orange water — was worth every kilometer pedaled.
-                </p>
-
-                <div class="media-audio">
-                    <p style="font-size:var(--font-size-sm);color:var(--color-text-secondary);margin-bottom:var(--spacing-sm);">
-                        <i class="fas fa-headphones"></i> Ambient recording — Lakeside at sunset
-                    </p>
-                    <audio controls preload="none" style="width:100%;">
-                        <source src="videos/taihu-ambient.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-
-                <div class="article-tags">
-                    <span class="article-tag" data-i18n="tag.cycling">Cycling</span>
-                    <span class="article-tag" data-i18n="tag.taihu">Taihu Lake</span>
-                    <span class="article-tag" data-i18n="tag.outdoor">Outdoor</span>
-                </div>
-            </article>
-
-        </div>
+        <div id="posts-container" class="article-list"></div>
 
         <!-- Lightbox overlays -->
         <div id="lightbox-img1" class="lightbox-overlay">
@@ -142,12 +52,47 @@
         </div>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="../assets/js/i18n.js"></script>
     <script src="../assets/js/theme.js"></script>
+    <script src="assets/js/posts.js"></script>
+    <script src="assets/js/blog-render.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             initTheme();
             initI18N();
+
+            const galleryHtml = `
+                <a href="#lightbox-img1"><img src="imgs/huangshan-1.jpg" alt="Huangshan sunrise" loading="lazy" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22><rect fill=%22%23e0e4e8%22 width=%22400%22 height=%22300%22/><text x=%22200%22 y=%22155%22 text-anchor=%22middle%22 fill=%22%23999%22>🏔️ Sunrise</text></svg>'"></a>
+                <a href="#lightbox-img2"><img src="imgs/huangshan-2.jpg" alt="Cloud sea view" loading="lazy" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22><rect fill=%22%23e0e4e8%22 width=%22400%22 height=%22300%22/><text x=%22200%22 y=%22155%22 text-anchor=%22middle%22 fill=%22%23999%22>☁️ Cloud Sea</text></svg>'"></a>
+            `;
+
+            const videoHtml = `
+                <video controls preload="metadata" poster="imgs/suzhou-poster.jpg" style="width:100%;">
+                    <source src="videos/suzhou-gardens.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            `;
+
+            const audioHtml = `
+                <p style="font-size:var(--font-size-sm);color:var(--color-text-secondary);margin-bottom:var(--spacing-sm);">
+                    <i class="fas fa-headphones"></i> Ambient recording — Lakeside at sunset
+                </p>
+                <audio controls preload="none" style="width:100%;">
+                    <source src="videos/taihu-ambient.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            `;
+
+            /* Attach media to specific posts */
+            const postsWithMedia = travelPosts.map(p => {
+                if (p.hasGallery) return { ...p, galleryHtml };
+                if (p.hasVideo) return { ...p, videoHtml };
+                if (p.hasAudio) return { ...p, audioHtml };
+                return p;
+            });
+
+            renderPosts(postsWithMedia, 'posts-container', { isTravel: true });
         });
     </script>
 </body>

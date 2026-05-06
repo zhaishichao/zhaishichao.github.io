@@ -111,6 +111,10 @@ const I18N = {
     'blog.tab.travel':       { en: 'Travel Diaries',    cn: '行万里路' },
     'blog.tab.daily':        { en: 'Daily Life',        cn: '日常' },
 
+    /* Blog expand/collapse */
+    'post.read-more':        { en: 'Read More',          cn: '展开阅读' },
+    'post.read-less':        { en: 'Show Less',          cn: '收起' },
+
     /* Theme */
     'theme.light':           { en: 'Light',             cn: '浅色' },
     'theme.dark':            { en: 'Dark',              cn: '深色' },

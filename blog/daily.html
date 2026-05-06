@@ -39,84 +39,19 @@
             <p data-i18n="blog.daily.desc">Everyday musings, random thoughts, and slices of daily academic life.</p>
         </div>
 
-        <div class="article-list">
-
-            <article class="article-card">
-                <span class="article-date">2025.05.03</span>
-                <h3 class="article-title">Late Night Debugging and the Joy of Small Wins</h3>
-                <p class="article-excerpt">
-                    Spent four hours today tracking down a subtle bug in my SBFL evaluation pipeline — turned out to be
-                    a one-line off-by-one error in the suspiciousness score normalization. The frustration melted away
-                    instantly when all the test cases went green. There's something uniquely satisfying about these small
-                    victories in research. Also, instant noodles at 1am taste better when you've earned them.
-                </p>
-                <div class="article-tags">
-                    <span class="article-tag" data-i18n="tag.research">Research</span>
-                    <span class="article-tag" data-i18n="tag.coding">Coding</span>
-                    <span class="article-tag" data-i18n="tag.grad-life">GradLife</span>
-                </div>
-            </article>
-
-            <article class="article-card">
-                <span class="article-date">2025.04.18</span>
-                <h3 class="article-title">Spring Semester Routine</h3>
-                <p class="article-excerpt">
-                    Settling into a comfortable rhythm this semester: morning reading over coffee, lab work from 9 to 6,
-                    evening runs along the campus canal, and late-night paper writing sessions. The cherry blossoms on
-                    campus were in full bloom this week — a brief but spectacular reminder that beauty rewards those who
-                    pay attention. Also started learning to cook proper Chinese dishes; the first attempt at Mapo Tofu
-                    was... educational.
-                </p>
-                <div class="article-tags">
-                    <span class="article-tag" data-i18n="tag.campus">Campus</span>
-                    <span class="article-tag" data-i18n="tag.suzhou">Suzhou</span>
-                    <span class="article-tag" data-i18n="tag.lifestyle">Lifestyle</span>
-                </div>
-            </article>
-
-            <article class="article-card">
-                <span class="article-date">2025.03.10</span>
-                <h3 class="article-title">Conference Submission Season</h3>
-                <p class="article-excerpt">
-                    The lab has been buzzing with energy as everyone races to meet conference deadlines. It's my first
-                    time preparing a full paper submission, and the process has been eye-opening — from designing
-                    experiments to crafting a compelling narrative around the results. My advisor's feedback taught me
-                    that a good paper doesn't just report findings; it tells a story that other researchers can build upon.
-                    Fingers crossed for the reviews.
-                </p>
-                <div class="article-tags">
-                    <span class="article-tag" data-i18n="tag.conference">Conference</span>
-                    <span class="article-tag" data-i18n="tag.writing">Writing</span>
-                    <span class="article-tag" data-i18n="tag.research">Research</span>
-                </div>
-            </article>
-
-            <article class="article-card">
-                <span class="article-date">2025.01.25</span>
-                <h3 class="article-title">New Year, New Semester</h3>
-                <p class="article-excerpt">
-                    Started the new year by attending the Cutting-Edge Forum on Evolutionary Computation 2025 — an inspiring
-                    event that brought together researchers from across China. The discussions on the future of EC in
-                    the era of large language models were particularly thought-provoking. It's both humbling and exciting
-                    to see how much there is to learn and contribute. Resolution for the year: read one paper per day,
-                    write one meaningful commit per day, and never skip lunch.
-                </p>
-                <div class="article-tags">
-                    <span class="article-tag" data-i18n="tag.new-year">NewYear</span>
-                    <span class="article-tag" data-i18n="tag.conference">Conference</span>
-                    <span class="article-tag" data-i18n="tag.reflections">Reflections</span>
-                </div>
-            </article>
-
-        </div>
+        <div id="posts-container" class="article-list"></div>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="../assets/js/i18n.js"></script>
     <script src="../assets/js/theme.js"></script>
+    <script src="assets/js/posts.js"></script>
+    <script src="assets/js/blog-render.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             initTheme();
             initI18N();
+            renderPosts(dailyPosts, 'posts-container');
         });
     </script>
 </body>

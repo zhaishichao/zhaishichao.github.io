@@ -39,63 +39,19 @@
             <p data-i18n="blog.reading.desc">Book reviews, reading notes, and personal reflections on literature and research.</p>
         </div>
 
-        <div class="article-list">
-
-            <article class="article-card">
-                <span class="article-date">2025.04.15</span>
-                <h3 class="article-title">Notes on "Introduction to Evolutionary Computing"</h3>
-                <p class="article-excerpt">
-                    A deep dive into the foundational concepts of evolutionary algorithms — selection, crossover, mutation,
-                    and fitness landscapes. This book provides a rigorous yet accessible introduction to the field that
-                    underpins much of modern optimization research. The chapters on multi-objective optimization were
-                    particularly enlightening for my current work.
-                </p>
-                <div class="article-tags">
-                    <span class="article-tag" data-i18n="tag.evolutionary">Evolutionary Computation</span>
-                    <span class="article-tag" data-i18n="tag.optimization">Optimization</span>
-                    <span class="article-tag" data-i18n="tag.genetic">Genetic Algorithms</span>
-                </div>
-            </article>
-
-            <article class="article-card">
-                <span class="article-date">2025.02.20</span>
-                <h3 class="article-title">Reflections on "The Elements of Statistical Learning"</h3>
-                <p class="article-excerpt">
-                    Hastie, Tibshirani, and Friedman's classic text continues to be one of the most important references
-                    in machine learning. Rereading the chapters on model assessment and selection gave me new perspectives
-                    on the bias-variance tradeoff and how it relates to imbalanced classification problems.
-                </p>
-                <div class="article-tags">
-                    <span class="article-tag" data-i18n="tag.ml">Machine Learning</span>
-                    <span class="article-tag" data-i18n="tag.statistics">Statistics</span>
-                    <span class="article-tag" data-i18n="tag.model-selection">Model Selection</span>
-                </div>
-            </article>
-
-            <article class="article-card">
-                <span class="article-date">2024.11.08</span>
-                <h3 class="article-title">"Deep Work" by Cal Newport — A Review</h3>
-                <p class="article-excerpt">
-                    Newport's argument for focused, uninterrupted work resonates deeply with the academic lifestyle.
-                    The practical strategies for cultivating deep work habits — scheduling, rituals, and embracing boredom —
-                    have meaningfully changed my daily routine in the lab. A must-read for anyone in research.
-                </p>
-                <div class="article-tags">
-                    <span class="article-tag" data-i18n="tag.productivity">Productivity</span>
-                    <span class="article-tag" data-i18n="tag.research">Research</span>
-                    <span class="article-tag" data-i18n="tag.self-improvement">Self-Improvement</span>
-                </div>
-            </article>
-
-        </div>
+        <div id="posts-container" class="article-list"></div>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="../assets/js/i18n.js"></script>
     <script src="../assets/js/theme.js"></script>
+    <script src="assets/js/posts.js"></script>
+    <script src="assets/js/blog-render.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             initTheme();
             initI18N();
+            renderPosts(readingPosts, 'posts-container');
         });
     </script>
 </body>
