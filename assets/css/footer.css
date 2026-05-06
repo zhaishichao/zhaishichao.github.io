@@ -1,0 +1,42 @@
+/* ===== Footer ===== */
+.site-footer {
+    padding: var(--spacing-2xl) 0;
+    background: var(--color-bg-secondary);
+    border-top: 1px solid var(--color-border);
+    text-align: center;
+}
+
+.footer-motto {
+    font-family: var(--font-serif);
+    font-size: var(--font-size-lg);
+    font-style: italic;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.6;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.footer-social .icon-link {
+    width: 36px;
+    height: 36px;
+    font-size: var(--font-size-base);
+}
+
+.footer-copyright {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-light);
+    line-height: 1.8;
+}
+
+.footer-copyright a {
+    color: var(--color-text-secondary);
+}
+.footer-copyright a:hover {
+    color: var(--color-primary);
+}

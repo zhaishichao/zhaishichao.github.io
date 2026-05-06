@@ -1,0 +1,71 @@
+/* ===== Responsive Design ===== */
+
+/* Small phones: < 480px */
+@media (max-width: 479px) {
+    :root {
+        --font-size-base: 15px;
+    }
+    section {
+        padding: var(--spacing-2xl) 0;
+    }
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+    .hero-name {
+        font-size: var(--font-size-2xl);
+    }
+    .honors-grid {
+        grid-template-columns: 1fr;
+    }
+    .pub-cover img {
+        max-height: 200px;
+    }
+}
+
+/* Large phones: 480px - 767px */
+@media (min-width: 480px) and (max-width: 767px) {
+    section {
+        padding: var(--spacing-2xl) 0;
+    }
+}
+
+/* Tablets: 768px - 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .hero-grid {
+        flex-direction: row;
+        text-align: left;
+    }
+    .honors-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .pub-item {
+        flex-direction: column;
+    }
+}
+
+/* Desktop: 1024px+ */
+@media (min-width: 1024px) {
+    section {
+        padding: var(--spacing-3xl) 0;
+    }
+}
+
+/* Print styles */
+@media print {
+    .navbar, .site-footer, .btn-blog, .icon-btn, .hamburger, .mobile-menu {
+        display: none !important;
+    }
+    body {
+        font-size: 12pt;
+        color: #000;
+        background: #fff;
+    }
+    section {
+        padding: 1rem 0;
+        page-break-inside: avoid;
+    }
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+}

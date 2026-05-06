@@ -1,0 +1,93 @@
+/* ===== Design Tokens ===== */
+:root {
+    /* Color Palette - Academic Navy + Gold */
+    --color-primary: #1a5276;
+    --color-primary-light: #2980b9;
+    --color-primary-dark: #0d3446;
+    --color-accent: #c8a424;
+    --color-accent-light: #e8d44d;
+    --color-accent-dark: #9a7d1a;
+
+    /* Tag Colors */
+    --color-tag-blue: #3498db;
+    --color-tag-green: #27ae60;
+    --color-tag-orange: #e67e22;
+    --color-tag-red: #e74c3c;
+    --color-tag-purple: #8e44ad;
+
+    /* Neutrals */
+    --color-bg: #ffffff;
+    --color-bg-secondary: #f5f7fa;
+    --color-bg-tertiary: #eef1f5;
+    --color-text: #2c3e50;
+    --color-text-secondary: #7f8c8d;
+    --color-text-light: #a0a8b0;
+    --color-border: #e0e4e8;
+    --color-border-light: #eef0f2;
+
+    /* Typography */
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-serif: 'Source Serif 4', 'Georgia', 'Times New Roman', serif;
+    --font-mono: 'JetBrains Mono', 'Consolas', 'Courier New', monospace;
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.875rem;
+    --font-size-4xl: 2.25rem;
+
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 3rem;
+    --spacing-3xl: 4rem;
+
+    /* Layout */
+    --max-width: 1100px;
+    --navbar-height: 60px;
+    --sidebar-width: 280px;
+
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-full: 9999px;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+    /* Transitions */
+    --transition-fast: 150ms ease;
+    --transition-normal: 250ms ease;
+    --transition-slow: 400ms ease;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --color-primary: #5dade2;
+    --color-primary-light: #85c1e9;
+    --color-primary-dark: #2e86c1;
+    --color-accent: #f4d03f;
+    --color-accent-light: #f7dc6f;
+    --color-accent-dark: #d4ac0d;
+
+    --color-bg: #1a1d23;
+    --color-bg-secondary: #22252b;
+    --color-bg-tertiary: #2a2d35;
+    --color-text: #e1e4e8;
+    --color-text-secondary: #959da5;
+    --color-text-light: #6a7078;
+    --color-border: #383c44;
+    --color-border-light: #2e3138;
+
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+}

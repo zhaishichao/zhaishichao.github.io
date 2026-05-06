@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal blog of Shichao Zhai - Reading notes, travel diaries, and daily reflections">
+    <title>Blog - Shichao Zhai</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/variables.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/buttons.css">
+    <link rel="stylesheet" href="assets/css/blog-base.css">
+    <link rel="stylesheet" href="assets/css/blog-section.css">
+</head>
+<body>
+
+    <nav class="blog-nav">
+        <div class="blog-nav-left">
+            <a href="../index.html" class="btn-back" data-i18n="blog.back">← Back to Homepage</a>
+        </div>
+        <div class="blog-nav-center">
+            <a href="reading.html" class="blog-nav-tab" data-i18n="blog.tab.reading">Reading Notes</a>
+            <a href="travel.html" class="blog-nav-tab" data-i18n="blog.tab.travel">Travel Diaries</a>
+            <a href="daily.html" class="blog-nav-tab" data-i18n="blog.tab.daily">Daily Life</a>
+        </div>
+        <div class="blog-nav-right">
+            <button id="lang-toggle" class="lang-btn" aria-label="Toggle language">EN</button>
+            <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
+        </div>
+    </nav>
+
+    <main class="blog-content">
+        <div class="blog-landing">
+            <h1 data-i18n="blog.title">Personal Blog</h1>
+            <p class="subtitle" data-i18n="blog.subtitle">Reading, Traveling, and Everyday Life</p>
+
+            <div class="blog-cards">
+                <a href="reading.html" class="blog-card">
+                    <div class="blog-card-icon">📖</div>
+                    <h2 data-i18n="blog.reading">Reading Notes</h2>
+                    <p data-i18n="blog.reading.desc">Book reviews, reading notes, and personal reflections on literature and research.</p>
+                </a>
+
+                <a href="travel.html" class="blog-card">
+                    <div class="blog-card-icon">🏔️</div>
+                    <h2 data-i18n="blog.travel">Travel Diaries</h2>
+                    <p data-i18n="blog.travel.desc">Travel journals, landscape photography, videos, and stories from the road.</p>
+                </a>
+
+                <a href="daily.html" class="blog-card">
+                    <div class="blog-card-icon">☕</div>
+                    <h2 data-i18n="blog.daily">Daily Life</h2>
+                    <p data-i18n="blog.daily.desc">Everyday musings, random thoughts, and slices of daily academic life.</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script src="../assets/js/i18n.js"></script>
+    <script src="../assets/js/theme.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            initTheme();
+            initI18N();
+        });
+    </script>
+</body>
+</html>

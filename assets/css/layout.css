@@ -1,0 +1,98 @@
+/* ===== Layout System ===== */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+}
+
+section {
+    padding: var(--spacing-3xl) 0;
+    border-bottom: 1px solid var(--color-border-light);
+}
+section:last-of-type {
+    border-bottom: none;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    margin-bottom: var(--spacing-2xl);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 3px solid var(--color-primary);
+    position: relative;
+}
+[data-theme="dark"] .section-title {
+    color: var(--color-primary-light);
+}
+
+.section-icon {
+    font-size: 1.1em;
+}
+
+.section-subtitle {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+    margin-top: -var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+/* Two-column grid used in Home section */
+.split-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2xl);
+    align-items: start;
+}
+@media (min-width: 768px) {
+    .split-grid {
+        grid-template-columns: 280px 1fr;
+    }
+}
+
+/* Card base */
+.card {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+[data-theme="dark"] .card {
+    background: var(--color-bg-secondary);
+}
+
+/* Tag pill base */
+.tag {
+    display: inline-block;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-full);
+    color: #fff;
+    margin: 0 var(--spacing-xs) var(--spacing-xs) 0;
+}
+
+/* Link with underline accent */
+.link-highlight {
+    color: var(--color-primary);
+    font-weight: 600;
+    text-decoration: none;
+    background: linear-gradient(to right, var(--color-accent), var(--color-accent));
+    background-size: 0 2px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: background-size var(--transition-normal), color var(--transition-fast);
+}
+.link-highlight:hover {
+    background-size: 100% 2px;
+    color: var(--color-primary-dark);
+}

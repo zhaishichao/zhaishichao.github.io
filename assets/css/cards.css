@@ -1,0 +1,102 @@
+/* ===== Honors Card Grid ===== */
+.honors-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+}
+@media (min-width: 600px) {
+    .honors-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .honors-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.honor-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: var(--spacing-xl) var(--spacing-lg);
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+    overflow: hidden;
+}
+.honor-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--color-primary);
+    transition: height var(--transition-fast);
+}
+.honor-card:hover::before {
+    height: 5px;
+}
+.honor-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.honor-card.gold::before { background: #f1c40f; }
+.honor-card.silver::before { background: #95a5a6; }
+.honor-card.blue::before { background: var(--color-primary); }
+
+.honor-icon {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-sm);
+}
+
+.honor-date {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.honor-name {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-xs);
+    line-height: 1.4;
+}
+
+.honor-org {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+}
+
+.honor-badge {
+    position: absolute;
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    background: var(--color-accent);
+    color: #fff;
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: var(--radius-full);
+    line-height: 1.4;
+}
+[data-theme="dark"] .honor-badge {
+    color: #1a1d23;
+}
+
+/* Card icon color variants */
+.honor-card .fa-trophy { color: #f1c40f; }
+.honor-card .fa-medal { color: #95a5a6; }
+.honor-card .fa-star { color: var(--color-primary); }
+.honor-card .fa-award { color: var(--color-accent); }
+.honor-card .fa-certificate { color: var(--color-primary-light); }
+.honor-card .fa-graduation-cap { color: var(--color-primary-dark); }

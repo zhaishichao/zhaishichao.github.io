@@ -1,0 +1,14 @@
+/* ===== Main Stylesheet Aggregator ===== */
+@import 'variables.css';
+@import 'base.css';
+@import 'layout.css';
+@import 'navbar.css';
+@import 'buttons.css';
+@import 'hero.css';
+@import 'timeline.css';
+@import 'cards.css';
+@import 'publications.css';
+@import 'projects.css';
+@import 'reading.css';
+@import 'footer.css';
+@import 'responsive.css';

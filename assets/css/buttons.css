@@ -1,0 +1,129 @@
+/* ===== Buttons & Interactive Elements ===== */
+.icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+    background: transparent;
+    color: var(--color-text);
+    cursor: pointer;
+    font-size: var(--font-size-sm);
+    transition: all var(--transition-fast);
+    -webkit-user-select: none;
+    user-select: none;
+}
+.icon-btn:hover {
+    background: var(--color-bg-tertiary);
+    color: var(--color-primary);
+    border-color: var(--color-primary-light);
+}
+
+/* Theme toggle (moon/sun) */
+#theme-toggle {
+    font-size: var(--font-size-lg);
+    width: 38px;
+    height: 38px;
+}
+
+/* Language toggle */
+.lang-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 42px;
+    height: 36px;
+    padding: 0 var(--spacing-sm);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: transparent;
+    color: var(--color-text);
+    cursor: pointer;
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all var(--transition-fast);
+    -webkit-user-select: none;
+    user-select: none;
+}
+.lang-btn:hover {
+    background: var(--color-primary);
+    color: #fff;
+    border-color: var(--color-primary);
+}
+
+/* Blog jump button */
+.btn-blog {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    height: 36px;
+    padding: 0 var(--spacing-md);
+    border: 2px solid var(--color-accent);
+    border-radius: var(--radius-md);
+    background: transparent;
+    color: var(--color-accent-dark);
+    cursor: pointer;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all var(--transition-fast);
+    -webkit-user-select: none;
+    user-select: none;
+}
+.btn-blog:hover {
+    background: var(--color-accent);
+    color: #fff;
+}
+[data-theme="dark"] .btn-blog {
+    color: var(--color-accent);
+}
+[data-theme="dark"] .btn-blog:hover {
+    color: #1a1d23;
+}
+
+/* Outline buttons (used in publications for PDF/Code links) */
+.btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-xs) var(--spacing-md);
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius-sm);
+    background: transparent;
+    color: var(--color-primary);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all var(--transition-fast);
+}
+.btn-outline:hover {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+/* Solid button */
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border: none;
+    border-radius: var(--radius-md);
+    background: var(--color-primary);
+    color: #fff;
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all var(--transition-fast);
+}
+.btn-primary:hover {
+    background: var(--color-primary-dark);
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+}
