@@ -11,7 +11,7 @@ const I18N = {
 
     /* Home */
     'home.greeting':         { en: "Hi, I'm",           cn: '你好，我是' },
-    'home.role':             { en: 'Graduate Student in Artificial Intelligence', cn: '人工智能方向硕士研究生' },
+    'home.role':             { en: 'M.S. in Artificial Intelligence', cn: '人工智能硕士' },
     'home.university':       { en: 'Soochow University', cn: '苏州大学' },
     'home.university-haut':  { en: 'Henan University of Technology', cn: '河南工业大学' },
     'home.location-label':   { en: 'Location:',         cn: '现居地：' },
@@ -39,7 +39,7 @@ const I18N = {
     /* Education */
     'edu.ms':                { en: 'M.S. in Artificial Intelligence', cn: '人工智能硕士' },
     'edu.bs':                { en: 'B.E. in Software Engineering', cn: '软件工程学士' },
-    'edu.ms.note':           { en: 'Recommended for Graduate Admission (Exempt from Entrance Exam)', cn: '推免研究生' },
+    'edu.ms.note':           { en: 'Recommended for Graduate Admission', cn: '推免研究生' },
     'edu.bs.note':           { en: 'Honors Bachelor\'s Degree (Top 3%)', cn: '荣誉学士学位（前3%）' },
     'edu.present':           { en: 'Present',           cn: '至今' },
 
@@ -65,16 +65,16 @@ const I18N = {
         cn: '优秀共青团干部'
     },
     'honor.graduate': {
-        en: 'Outstanding Graduate of Henan University of Technology',
-        cn: '河南工业大学优秀本科毕业生'
+        en: 'Outstanding Graduate',
+        cn: '优秀本科毕业生'
     },
     'honor.honors-degree': {
-        en: 'Honors Bachelor\'s Degree, Henan University of Technology (Top 3%)',
-        cn: '河南工业大学荣誉学士学位（前3%）'
+        en: 'Honors Bachelor\'s Degree (Top 3%)',
+        cn: '荣誉学士学位（前3%）'
     },
     'honor.scholarship': {
-        en: 'First-Class Graduate Scholarship, Soochow University (Top 5%)',
-        cn: '苏州大学研究生一等学业奖学金（前5%）'
+        en: 'First-Class Graduate Scholarship (Top 5%)',
+        cn: '研究生一等学业奖学金（前5%）'
     },
     'honor.times': {
         en: '{n} times',
@@ -114,6 +114,9 @@ const I18N = {
     'blog.tab.reading':      { en: 'Reading Notes',     cn: '读万卷书' },
     'blog.tab.travel':       { en: 'Travel Diaries',    cn: '行万里路' },
     'blog.tab.daily':        { en: 'Daily Life',        cn: '日常' },
+
+    /* Reading */
+    'reading.current':       { en: 'Currently Reading',  cn: '在读' },
 
     /* Blog expand/collapse */
     'post.read-more':        { en: 'Read More',          cn: '展开阅读' },
