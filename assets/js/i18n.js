@@ -17,6 +17,8 @@ const I18N = {
     'home.location-label':   { en: 'Location:',         cn: '现居地：' },
     'home.location-value':   { en: 'Suzhou, Jiangsu, China', cn: '中国 江苏 苏州' },
     'home.email-label':      { en: 'Email:',            cn: '邮箱：' },
+    'home.department-label': { en: 'Department:',       cn: '院部：' },
+    'home.department-value': { en: 'School of Future Science and Engineering', cn: '未来科学与工程学院' },
     'home.advisor':          { en: 'Advisor:',          cn: '导师：' },
     'home.advisor-name':     { en: 'Prof. Ruwang Jiao', cn: '焦儒旺教授' },
     'home.research':         { en: 'Research Interests', cn: '研究方向' },
@@ -97,15 +99,16 @@ const I18N = {
     'proj.time':             { en: 'Duration: ',        cn: '时间：' },
 
     /* Footer */
+    'footer.name':           { en: 'Shichao Zhai',    cn: '翟士超' },
     'footer.motto':          { en: 'Stay hungry, stay foolish. — Steve Jobs', cn: '求知若饥，虚心若愚。 — 史蒂夫·乔布斯' },
     'footer.copyright':      { en: 'All rights reserved.', cn: '版权所有。' },
-    'footer.powered':        { en: 'Built with dedication. Last updated: 2025.', cn: '用心构建。最近更新：2025年。' },
+    'footer.powered':        { en: 'Built with dedication. Last updated: 2026.', cn: '用心构建。最近更新：2026年。' },
 
     /* Blog (shared key used in main navbar) */
     'blog.title':            { en: 'Personal Blog',     cn: '个人博客' },
 
     /* Reading */
-    'reading.current':       { en: 'Currently Reading',  cn: '在读' },
+    'reading.current':       { en: 'Now Reading',       cn: '阅读中' },
 
     /* Expand/collapse (shared between main & blog) */
     'post.read-more':        { en: 'Read More',          cn: '展开阅读' },
