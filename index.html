@@ -14,6 +14,18 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+    <!-- Blog prefetch: CDN -->
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+    <!-- Blog prefetch: pages -->
+    <link rel="prefetch" href="blog/index.html" as="document">
+    <link rel="prefetch" href="blog/assets/css/blog-base.css" as="style">
+    <link rel="prefetch" href="blog/assets/css/blog-section.css" as="style">
+    <link rel="prefetch" href="blog/assets/js/i18n-blog.js" as="script">
+    <link rel="prefetch" href="blog/assets/js/posts.js" as="script">
+    <link rel="prefetch" href="blog/assets/js/blog-render.js" as="script">
+
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/main.css">
 
@@ -124,7 +136,7 @@
                             </a>
                             <span class="pageviews-badge">
                                 <i class="fas fa-eye"></i>
-                                <span id="pageviews-count">...</span>
+                                <span id="busuanzi_value_site_pv">...</span>
                                 <span data-i18n="home.views">visits</span>
                             </span>
                         </div>
@@ -140,30 +152,7 @@
                     <span class="section-icon">🎓</span>
                     <span data-i18n="section.education">Education</span>
                 </h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">2024.09 &ndash; <span data-i18n="edu.present">Present</span></span>
-                            <h3 class="timeline-school">
-                                <a href="https://www.suda.edu.cn/" target="_blank" rel="noopener"><span data-i18n="home.university">Soochow University</span></a>
-                            </h3>
-                            <p class="timeline-degree" data-i18n="edu.ms">M.S. in Artificial Intelligence</p>
-                            <p class="timeline-note" data-i18n="edu.ms.note">Recommended for Graduate Admission (Exempt from Entrance Exam)</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">2020.09 &ndash; 2024.06</span>
-                            <h3 class="timeline-school">
-                                <a href="https://www.haut.edu.cn/" target="_blank" rel="noopener"><span data-i18n="home.university-haut">Henan University of Technology</span></a>
-                            </h3>
-                            <p class="timeline-degree" data-i18n="edu.bs">B.E. in Software Engineering</p>
-                            <p class="timeline-note" data-i18n="edu.bs.note">Honors Bachelor's Degree (Top 3%)</p>
-                        </div>
-                    </div>
-                </div>
+                <div class="timeline" id="education-timeline"></div>
             </div>
         </section>
 
@@ -174,68 +163,7 @@
                     <span class="section-icon">🏆</span>
                     <span data-i18n="section.honors">Honors &amp; Awards</span>
                 </h2>
-                <div class="honors-grid">
-
-                    <div class="honor-card gold">
-                        <div class="honor-icon"><i class="fas fa-certificate"></i></div>
-                        <div class="honor-date">2024 &ndash; <span data-i18n="edu.present">Present</span></div>
-                        <h4 class="honor-name" data-i18n="honor.scholarship">First-Class Graduate Scholarship (Top 5%)</h4>
-                        <p class="honor-org" data-i18n="org.suda">Soochow University</p>
-                    </div>
-
-                    <div class="honor-card gold">
-                        <div class="honor-icon"><i class="fas fa-certificate"></i></div>
-                        <div class="honor-date">2024</div>
-                        <h4 class="honor-name" data-i18n="honor.honors-degree">Honors Bachelor's Degree (Top 3%)</h4>
-                        <p class="honor-org" data-i18n="org.haut">Henan University of Technology</p>
-                    </div>
-
-                    <div class="honor-card blue">
-                        <div class="honor-icon"><i class="fas fa-graduation-cap"></i></div>
-                        <div class="honor-date">2024</div>
-                        <h4 class="honor-name" data-i18n="honor.graduate">Outstanding Graduate</h4>
-                        <p class="honor-org" data-i18n="org.haut">Henan University of Technology</p>
-                    </div>
-
-                    <div class="honor-card gold">
-                        <div class="honor-icon"><i class="fas fa-trophy"></i></div>
-                        <div class="honor-date">2024</div>
-                        <h4 class="honor-name" data-i18n="honor.national-first">National First Prize, 14th Lanqiao Cup Software Testing Competition</h4>
-                        <p class="honor-org" data-i18n="org.lanqiao">Lanqiao Cup Organizing Committee</p>
-                    </div>
-
-                    <div class="honor-card silver">
-                        <div class="honor-icon"><i class="fas fa-medal"></i></div>
-                        <div class="honor-date">2023</div>
-                        <h4 class="honor-name" data-i18n="honor.provincial-second">Provincial Second Prize, 13th Lanqiao Cup C/C++ Programming Competition</h4>
-                        <p class="honor-org" data-i18n="org.lanqiao">Lanqiao Cup Organizing Committee</p>
-                    </div>
-
-                    <div class="honor-card blue">
-                        <div class="honor-icon"><i class="fas fa-star"></i></div>
-                        <div class="honor-date">2021 &ndash; 2024</div>
-                        <h4 class="honor-name" data-i18n="honor.merit-student">Merit Student</h4>
-                        <p class="honor-org" data-i18n="org.haut">Henan University of Technology</p>
-                        <span class="honor-badge">×3</span>
-                    </div>
-
-                    <div class="honor-card blue">
-                        <div class="honor-icon"><i class="fas fa-star"></i></div>
-                        <div class="honor-date">2021 &ndash; 2024</div>
-                        <h4 class="honor-name" data-i18n="honor.cadre">Outstanding Student Leader</h4>
-                        <p class="honor-org" data-i18n="org.haut">Henan University of Technology</p>
-                        <span class="honor-badge">×3</span>
-                    </div>
-
-                    <div class="honor-card blue">
-                        <div class="honor-icon"><i class="fas fa-award"></i></div>
-                        <div class="honor-date">2023</div>
-                        <h4 class="honor-name" data-i18n="honor.league-cadre">Outstanding Communist Youth League Cadre</h4>
-                        <p class="honor-org" data-i18n="org.haut">Henan University of Technology</p>
-                        <span class="honor-badge">×1</span>
-                    </div>
-
-                </div>
+                <div class="honors-grid" id="honors-grid"></div>
             </div>
         </section>
 
@@ -246,23 +174,7 @@
                     <span class="section-icon">📝</span>
                     <span data-i18n="section.publications">Publications</span>
                 </h2>
-                <div class="pub-list">
-                    <div class="pub-item">
-                        <div class="pub-cover">
-                            <img src="imgs/publication/The overall framework of MILE.png" alt="MILE Framework">
-                        </div>
-                        <div class="pub-info">
-                            <p class="pub-paper">
-                                <span class="pub-first-author">S. Zhai</span>, R. Jiao, B. Xue, Y. Nojima and M. Zhang, "MILE: Multi-Expert Ensemble with Instance Selection for Multi-Class Imbalanced Learning," in <span class="pub-journal">IEEE Transactions on Evolutionary Computation</span>, 2026, DOI: 10.1109/TEVC.2026.3682346
-                                &nbsp;<span class="pub-note" data-i18n="pub.mile-note">(CAS Q1 Top, Top Journal in Field, First Author)</span>
-                            </p>
-                            <div class="pub-links">
-                                <a href="https://ieeexplore.ieee.org/document/11478499" target="_blank" rel="noopener" class="btn-outline"><i class="fas fa-file-pdf"></i> <span data-i18n="pub.paper">PDF</span></a>
-                                <a href="https://github.com/FEATlab/MILE" target="_blank" rel="noopener" class="btn-outline"><i class="fas fa-code"></i> <span data-i18n="pub.code">Code</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="pub-list" id="pub-list"></div>
             </div>
         </section>
 
@@ -273,21 +185,7 @@
                     <span class="section-icon">💻</span>
                     <span data-i18n="section.projects">Projects &amp; Internships</span>
                 </h2>
-                <div class="project-list">
-
-                    <div class="project-item">
-                        <div class="project-logo" style="background:var(--color-bg-tertiary);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--color-primary);">
-                            iFLY
-                        </div>
-                        <div class="project-info">
-                            <h3 class="project-name">Social Service Platform Development</h3>
-                            <p class="project-role"><span data-i18n="proj.role">Role: </span>Core Developer</p>
-                            <p class="project-time">2024.04 &ndash; 2024.08 · iFLYTEK, Zhengzhou Research Institute</p>
-                            <p class="project-desc">Developed and maintained a comprehensive agricultural informatization management platform, implementing modules for land circulation, land trusteeship, map services, and customer service messaging. Responsible for the collection function module and customer service message system.</p>
-                        </div>
-                    </div>
-
-                </div>
+                <div class="project-list" id="project-list"></div>
             </div>
         </section>
 
@@ -298,356 +196,7 @@
                     <span class="section-icon">📚</span>
                     <span data-i18n="section.reading">Reading</span>
                 </h2>
-                <div class="reading-timeline">
-                    <div class="reading-path"></div>
-
-                    <!-- Book 1: 小镇喧嚣 [Currently Reading] -->
-                    <div class="reading-entry left">
-                        <div class="reading-node" id="reading-current-node">
-                            <span class="reading-md" id="reading-current-md">11.08</span>
-                        </div>
-                        <div class="reading-card">
-                            <div class="reading-cover">
-                                <img src="imgs/cover/xzxx.jpg" alt="小镇喧嚣">
-                            </div>
-                            <div class="reading-meta">
-                                <span class="reading-badge" data-i18n="reading.current">Currently Reading</span>
-                                <h4 class="reading-title">小镇喧嚣</h4>
-                                <p class="reading-author">吴毅</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book 2: 基层中国的运行逻辑 -->
-                    <div class="reading-entry right">
-                        <div class="reading-node">
-                            <span class="reading-md">04.22</span>
-                        </div>
-                        <div class="reading-card">
-                            <div class="reading-cover">
-                                <img src="imgs/cover/jczgdyxlj.png" alt="基层中国的运行逻辑">
-                            </div>
-                            <div class="reading-meta">
-                                <h4 class="reading-title">基层中国的运行逻辑</h4>
-                                <p class="reading-author">聂辉华</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book 3: 中国历代政治得失 -->
-                    <div class="reading-entry left">
-                        <div class="reading-node">
-                            <span class="reading-md">08.15</span>
-                        </div>
-                        <div class="reading-card">
-                            <div class="reading-cover">
-                                <img src="imgs/cover/zgldzzds.jpg" alt="中国历代政治得失">
-                            </div>
-                            <div class="reading-meta">
-                                <h4 class="reading-title">中国历代政治得失</h4>
-                                <p class="reading-author">钱穆</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book 4: 暮日耀光 -->
-                    <div class="reading-entry right collapsed">
-                        <div class="reading-node">
-                            <span class="reading-md">05.20</span>
-                        </div>
-                        <div class="reading-card">
-                            <div class="reading-cover">
-                                <img src="imgs/cover/mryg.jpg" alt="暮日耀光">
-                            </div>
-                            <div class="reading-meta">
-                                <h4 class="reading-title">暮日耀光</h4>
-                                <p class="reading-author">韦庆远</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book 5: 乡土中国 -->
-                    <div class="reading-entry left collapsed">
-                        <div class="reading-node">
-                            <span class="reading-md">03.12</span>
-                        </div>
-                        <div class="reading-card">
-                            <div class="reading-cover">
-                                <img src="imgs/cover/xtzg.jpg" alt="乡土中国">
-                            </div>
-                            <div class="reading-meta">
-                                <h4 class="reading-title">乡土中国</h4>
-                                <p class="reading-author">费孝通</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book 6: 置身事内 -->
-                    <div class="reading-entry right collapsed">
-                        <div class="reading-node">
-                            <span class="reading-md">01.21</span>
-                        </div>
-                        <div class="reading-card">
-                            <div class="reading-cover">
-                                <img src="imgs/cover/zssn.jpg" alt="置身事内">
-                            </div>
-                            <div class="reading-meta">
-                                <h4 class="reading-title">置身事内</h4>
-                                <p class="reading-author">兰小欢</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book 7: 叫魂 -->
-                    <div class="reading-entry left collapsed">
-                        <div class="reading-node">
-                            <span class="reading-year">2026</span>
-                            <span class="reading-md">01.05</span>
-                        </div>
-                        <div class="reading-card">
-                            <div class="reading-cover">
-                                <img src="imgs/cover/jh.jpg" alt="叫魂">
-                            </div>
-                            <div class="reading-meta">
-                                <h4 class="reading-title">叫魂</h4>
-                                <p class="reading-author">孔飞力 / 陈兼, 刘昶 译</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book 8: 被讨厌的勇气 -->
-                    <div class="reading-entry right collapsed">
-                        <div class="reading-node">
-                            <span class="reading-md">12.18</span>
-                        </div>
-                        <div class="reading-card">
-                            <div class="reading-cover">
-                                <img src="imgs/cover/btydyq.jpg" alt="被讨厌的勇气">
-                            </div>
-                            <div class="reading-meta">
-                                <h4 class="reading-title">被讨厌的勇气</h4>
-                                <p class="reading-author">岸见一郎, 古贺史健 / 渠海霞 译</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book 9: 雪国 -->
-                    <div class="reading-entry left collapsed">
-                        <div class="reading-node">
-                            <span class="reading-md">09.22</span>
-                        </div>
-                        <div class="reading-card">
-                            <div class="reading-cover">
-                                <img src="imgs/cover/xg.jpg" alt="雪国">
-                            </div>
-                            <div class="reading-meta">
-                                <h4 class="reading-title">雪国</h4>
-                                <p class="reading-author">川端康成 / 叶渭渠, 唐月梅 译</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book 10: 悉达多 -->
-                    <div class="reading-entry right collapsed">
-                        <div class="reading-node">
-                            <span class="reading-md">08.05</span>
-                        </div>
-                        <div class="reading-card">
-                            <div class="reading-cover">
-                                <img src="imgs/cover/xdd.jpg" alt="悉达多">
-                            </div>
-                            <div class="reading-meta">
-                                <h4 class="reading-title">悉达多</h4>
-                                <p class="reading-author">赫尔曼·黑塞 / 姜乙 译</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book 11: 围城 -->
-                    <div class="reading-entry left collapsed">
-                        <div class="reading-node">
-                            <span class="reading-md">06.14</span>
-                        </div>
-                        <div class="reading-card">
-                            <div class="reading-cover">
-                                <img src="imgs/cover/wc.jpg" alt="围城">
-                            </div>
-                            <div class="reading-meta">
-                                <h4 class="reading-title">围城</h4>
-                                <p class="reading-author">钱锺书</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book 12: 三体 -->
-                    <div class="reading-entry right collapsed">
-                        <div class="reading-node">
-                            <span class="reading-year">2025</span>
-                            <span class="reading-md">04.20</span>
-                        </div>
-                        <div class="reading-card">
-                            <div class="reading-cover">
-                                <img src="imgs/cover/st.jpg" alt="三体">
-                            </div>
-                            <div class="reading-meta">
-                                <h4 class="reading-title">三体</h4>
-                                <p class="reading-author">刘慈欣</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book 13: 沧浪之水 -->
-                    <div class="reading-entry left collapsed">
-                        <div class="reading-node">
-                            <span class="reading-year">2024</span>
-                            <span class="reading-md">11.18</span>
-                        </div>
-                        <div class="reading-card">
-                            <div class="reading-cover">
-                                <img src="imgs/cover/clzs.jpg" alt="沧浪之水">
-                            </div>
-                            <div class="reading-meta">
-                                <h4 class="reading-title">沧浪之水</h4>
-                                <p class="reading-author">阎真</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book 14: 我与地坛 -->
-                    <div class="reading-entry right collapsed">
-                        <div class="reading-node">
-                            <span class="reading-md">12.08</span>
-                        </div>
-                        <div class="reading-card">
-                            <div class="reading-cover">
-                                <img src="imgs/cover/wydt.jpg" alt="我与地坛">
-                            </div>
-                            <div class="reading-meta">
-                                <h4 class="reading-title">我与地坛</h4>
-                                <p class="reading-author">史铁生</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book 15: 牧羊少年奇幻之旅 -->
-                    <div class="reading-entry left collapsed">
-                        <div class="reading-node">
-                            <span class="reading-md">09.15</span>
-                        </div>
-                        <div class="reading-card">
-                            <div class="reading-cover">
-                                <img src="imgs/cover/mysnqhzl.jpg" alt="牧羊少年奇幻之旅">
-                            </div>
-                            <div class="reading-meta">
-                                <h4 class="reading-title">牧羊少年奇幻之旅</h4>
-                                <p class="reading-author">保罗·柯艾略 / 丁文林 译</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book 16: 平凡的世界 -->
-                    <div class="reading-entry right collapsed">
-                        <div class="reading-node">
-                            <span class="reading-md">07.20</span>
-                        </div>
-                        <div class="reading-card">
-                            <div class="reading-cover">
-                                <img src="imgs/cover/pfdsj.jpg" alt="平凡的世界">
-                            </div>
-                            <div class="reading-meta">
-                                <h4 class="reading-title">平凡的世界</h4>
-                                <p class="reading-author">路遥</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book 17: 人生 -->
-                    <div class="reading-entry left collapsed">
-                        <div class="reading-node">
-                            <span class="reading-md">05.10</span>
-                        </div>
-                        <div class="reading-card">
-                            <div class="reading-cover">
-                                <img src="imgs/cover/rs.jpg" alt="人生">
-                            </div>
-                            <div class="reading-meta">
-                                <h4 class="reading-title">人生</h4>
-                                <p class="reading-author">路遥</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book 18: 霍乱时期的爱情 -->
-                    <div class="reading-entry right collapsed">
-                        <div class="reading-node">
-                            <span class="reading-year">2023</span>
-                            <span class="reading-md">03.14</span>
-                        </div>
-                        <div class="reading-card">
-                            <div class="reading-cover">
-                                <img src="imgs/cover/hlsqdaq.jpg" alt="霍乱时期的爱情">
-                            </div>
-                            <div class="reading-meta">
-                                <h4 class="reading-title">霍乱时期的爱情</h4>
-                                <p class="reading-author">加西亚·马尔克斯 / 杨玲 译</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book 19: 解忧杂货店 -->
-                    <div class="reading-entry left collapsed">
-                        <div class="reading-node">
-                            <span class="reading-md">10.30</span>
-                        </div>
-                        <div class="reading-card">
-                            <div class="reading-cover">
-                                <img src="imgs/cover/jyzhd.jpg" alt="解忧杂货店">
-                            </div>
-                            <div class="reading-meta">
-                                <h4 class="reading-title">解忧杂货店</h4>
-                                <p class="reading-author">东野圭吾 / 李盈春 译</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book 20: 追风筝的人 -->
-                    <div class="reading-entry right collapsed">
-                        <div class="reading-node">
-                            <span class="reading-md">07.12</span>
-                        </div>
-                        <div class="reading-card">
-                            <div class="reading-cover">
-                                <img src="imgs/cover/zfzdr.jpg" alt="追风筝的人">
-                            </div>
-                            <div class="reading-meta">
-                                <h4 class="reading-title">追风筝的人</h4>
-                                <p class="reading-author">卡勒德·胡赛尼 / 李继宏 译</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book 21: 上帝掷骰子吗 -->
-                    <div class="reading-entry left collapsed">
-                        <div class="reading-node">
-                            <span class="reading-year">2022</span>
-                            <span class="reading-md">03.25</span>
-                        </div>
-                        <div class="reading-card">
-                            <div class="reading-cover">
-                                <img src="imgs/cover/sdztzm.jpg" alt="上帝掷骰子吗">
-                            </div>
-                            <div class="reading-meta">
-                                <h4 class="reading-title">上帝掷骰子吗</h4>
-                                <p class="reading-author">曹天元</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="reading-toggle-wrap">
-                    <button class="reading-toggle-btn" id="reading-toggle" data-i18n="post.read-more">Read More</button>
-                </div>
+                <div class="reading-timeline" id="reading-timeline"></div>
             </div>
         </section>
 
@@ -672,9 +221,13 @@
 
     <!-- Scripts -->
     <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/reading-data.js"></script>
+    <script src="assets/js/reading-render.js"></script>
+    <script src="assets/js/sections-data.js"></script>
+    <script src="assets/js/sections-render.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/navbar.js"></script>
-    <script src="assets/js/pageviews.js"></script>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
