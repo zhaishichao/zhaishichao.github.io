@@ -25,10 +25,23 @@ function initReadingToggle() {
     document.addEventListener('languageChanged', updateBtnText);
 }
 
+function updateCurrentReadingDate() {
+    const mdEl = document.getElementById('reading-current-md');
+    if (!mdEl) return;
+
+    const now = new Date();
+    const beijing = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Shanghai' }));
+    const month = String(beijing.getMonth() + 1).padStart(2, '0');
+    const day = String(beijing.getDate()).padStart(2, '0');
+
+    mdEl.textContent = month + '.' + day;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     initTheme();
     initI18N();
     initNavbar();
     initPageViews();
     initReadingToggle();
+    updateCurrentReadingDate();
 });
