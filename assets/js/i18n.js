@@ -117,6 +117,9 @@ const I18N = {
     /* Theme */
     'theme.light':           { en: 'Light',             cn: '浅色' },
     'theme.dark':            { en: 'Dark',              cn: '深色' },
+
+    /* Scroll-to-top */
+    'scroll.top':            { en: 'Back to top',       cn: '回到顶部' },
 };
 
 function applyLanguage(lang) {
