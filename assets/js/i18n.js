@@ -14,6 +14,9 @@ const I18N = {
     'home.role':             { en: 'Graduate Student in Artificial Intelligence', cn: '人工智能方向硕士研究生' },
     'home.university':       { en: 'Soochow University', cn: '苏州大学' },
     'home.university-haut':  { en: 'Henan University of Technology', cn: '河南工业大学' },
+    'home.location-label':   { en: 'Location:',         cn: '现居地：' },
+    'home.location-value':   { en: 'Suzhou, Jiangsu, China', cn: '中国 江苏 苏州' },
+    'home.email-label':      { en: 'Email:',            cn: '邮箱：' },
     'home.advisor':          { en: 'Advisor:',          cn: '导师：' },
     'home.advisor-name':     { en: 'Prof. Ruwang Jiao', cn: '焦儒旺教授' },
     'home.research':         { en: 'Research Interests', cn: '研究方向' },
@@ -84,10 +87,10 @@ const I18N = {
     'org.suda':              { en: 'Soochow University', cn: '苏州大学' },
 
     /* Publications */
-    'pub.pdf':               { en: 'PDF',               cn: '论文' },
+    'pub.paper':               { en: 'Paper',             cn: '论文' },
     'pub.code':              { en: 'Code',              cn: '代码' },
     'pub.coming':            { en: 'Coming soon...',    cn: '敬请期待...' },
-    'pub.mile-note':         { en: '(CAS Q1 Top, Top Journal in Field, First Author)', cn: '（中科院一区Top，领域顶刊，第一作者）' },
+    'pub.mile-note':         { en: '(CAS Q1, Top Journal in Field, First Author)', cn: '（中科院一区Top，领域顶刊，第一作者）' },
 
     /* Projects */
     'proj.role':             { en: 'Role: ',            cn: '担任角色：' },

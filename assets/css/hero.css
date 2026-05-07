@@ -71,6 +71,11 @@
     margin-bottom: var(--spacing-sm);
 }
 
+.hero-meta {
+    margin: var(--spacing-xs) 0;
+    font-size: var(--font-size-base);
+}
+
 /* Advisor */
 .hero-advisor {
     margin: var(--spacing-md) 0;
