@@ -119,7 +119,7 @@ function renderProjects() {
     projectsData.forEach(proj => {
         const logoHtml = proj.logoType === 'img'
             ? `<img src="${proj.logo}" alt="${proj.name}" class="project-logo">`
-            : `<div class="project-logo" style="background:var(--color-bg-tertiary);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--color-primary);">${proj.logo}</div>`;
+            : `<div class="project-logo-text">${proj.logo}</div>`;
 
         const timeLabel = proj.timeI18n
             ? `<span data-i18n="${proj.timeI18n}"></span>`
@@ -146,7 +146,6 @@ function renderAllSections() {
     renderHonors();
     renderPublications();
     renderProjects();
-    applyLanguage(getCurrentLang());
 }
 
 document.addEventListener('DOMContentLoaded', renderAllSections);

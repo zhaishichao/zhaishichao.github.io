@@ -42,7 +42,7 @@ function renderReadingTimeline() {
     if (!container) return;
 
     /* Sort by date descending. currentlyReading always goes to top. */
-    const sorted = [...readingPosts].sort((a, b) => {
+    const sorted = [...readingTimelineData].sort((a, b) => {
         if (a.currentlyReading) return -1;
         if (b.currentlyReading) return 1;
         return b.date.localeCompare(a.date);
@@ -102,8 +102,6 @@ function renderReadingTimeline() {
 
     container.innerHTML = html;
 
-    /* Apply i18n to rendered elements */
-    applyLanguage(getCurrentLang());
     initReadingToggle();
     updateCurrentReadingDate();
 }

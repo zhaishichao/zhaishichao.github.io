@@ -13,7 +13,7 @@
  *   date             - "YYYY-MM-DD" (null for currently reading)
  *   currentlyReading - true for the book you're reading now
  */
-const readingPosts = [
+const readingTimelineData = [
   {
     title: '小镇喧嚣',
     author: '吴毅',

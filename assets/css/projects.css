@@ -32,6 +32,20 @@
     flex-shrink: 0;
 }
 
+.project-logo-text {
+    width: 56px;
+    height: 56px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border-light);
+    background: var(--color-bg-tertiary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--color-primary);
+    flex-shrink: 0;
+}
+
 .project-info {
     flex: 1;
     min-width: 0;
