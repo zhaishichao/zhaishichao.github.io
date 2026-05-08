@@ -65,16 +65,29 @@
 }
 
 .project-time {
-    display: inline-block;
+    display: block;
     font-size: var(--font-size-sm);
     color: var(--color-primary);
     font-weight: 500;
     margin-bottom: var(--spacing-xs);
 }
 
-.project-desc {
+.project-company {
+    display: block;
+    font-size: var(--font-size-sm);
+    color: var(--color-primary);
+    font-weight: 500;
+    margin-bottom: var(--spacing-xs);
+}
+
+.project-company strong {
+    font-weight: 700;
+}
+
+.project-desc,
+.project-work {
     font-size: var(--font-size-sm);
     color: var(--color-text-secondary);
     line-height: 1.6;
-    margin-top: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
 }

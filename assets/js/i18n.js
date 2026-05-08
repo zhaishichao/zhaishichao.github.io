@@ -19,6 +19,8 @@ const I18N = {
     'home.email-label':      { en: 'Email:',            cn: '邮箱：' },
     'home.department-label': { en: 'Department:',       cn: '院部：' },
     'home.department-value': { en: 'School of Future Science and Engineering', cn: '未来科学与工程学院' },
+    'home.lab-label':        { en: 'Laboratory:',       cn: '实验室：' },
+    'home.lab-value':        { en: 'The Key Laboratory of General Artificial Intelligence and Large Models', cn: '通用人工智能与大模型重点实验室' },
     'home.advisor':          { en: 'Advisor:',          cn: '导师：' },
     'home.advisor-name':     { en: 'Prof. Ruwang Jiao', cn: '焦儒旺教授' },
     'home.research':         { en: 'Research Interests', cn: '研究方向' },
@@ -96,7 +98,16 @@ const I18N = {
 
     /* Projects */
     'proj.role':             { en: 'Role: ',            cn: '担任角色：' },
-    'proj.time':             { en: 'Duration: ',        cn: '时间：' },
+    'proj.company':          { en: 'Company / Dept.: ', cn: '公司/部门：' },
+    'proj.time':             { en: 'Internship Period: ', cn: '实习时间：' },
+    'proj.desc-label':       { en: 'Description: ',     cn: '项目描述：' },
+    'proj.work':             { en: 'Key Contributions: ', cn: '主要工作：' },
+
+    /* Project: iFLYTEK */
+    'proj.iflytek.name':     { en: 'Social Service Platform - Smart Agriculture Subsystem (Backend Developer)', cn: '社会化服务平台 - 智慧农业子系统（后端开发工程师）' },
+    'proj.iflytek.company':  { en: 'iFLYTEK Co., Ltd.', cn: '科大讯飞股份有限公司' },
+    'proj.iflytek.desc':     { en: 'A comprehensive social service platform aimed at connecting farmers, government, and third-party companies to promote the digitalization of agricultural resources.', cn: '该项目是一个综合性的社会化服务平台，旨在连接农户、政府、与第三方公司，推动农业资源数字化。' },
+    'proj.iflytek.work':     { en: 'Designed data tables for land resources, transfer orders, and contracts; implemented business logic for land listing, lease applications, contract signing, and status transitions, ensuring data consistency under hundreds of concurrent requests. Integrated with Amap (Gaode Map) to provide RESTful APIs for frontend display of land parcel geolocation, area, and ownership information, supporting map frame selection and polygon queries for nearby available land with query response times under 500ms. Tested a RAG-based agricultural knowledge Q&A system powered by the iFLYTEK Spark large model.', cn: '参与了设计土地资源、流转订单、承包合同等数据表，实现土地挂牌、申请承包、合同签订及状态流转的业务逻辑，支撑百级并发下的数据一致性；与高德地图对接，提供RESTful API供前端展示土地地块的地理位置、面积、权属等信息，支持地图框选、多边形查询附近可用地块，查询响应时间 < 500ms；测试基于讯飞星火大模型的RAG农业知识问答系统。' },
 
     /* Footer */
     'footer.name':           { en: 'Shichao Zhai',    cn: '翟士超' },

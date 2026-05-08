@@ -28,14 +28,17 @@
  *   links[]      - { href, icon, i18nKey }
  *
  * Project fields:
- *   logo     - text or image path for logo
- *   logoType - "text" or "img"
- *   name     - project name
- *   roleI18n - i18n key for role label
- *   role     - role text
- *   timeI18n - i18n key for time label (null to omit label)
- *   time     - time range and organization
- *   desc     - description text
+ *   logo          - text or image path for logo
+ *   logoType      - "text" or "img"
+ *   nameI18n      - i18n key for project name
+ *   companyI18n   - i18n key for company label (null to omit)
+ *   companyValueI18n - i18n key for company name (null to omit)
+ *   timeI18n      - i18n key for time label (null to omit)
+ *   time          - time range string (plain text)
+ *   descLabelI18n - i18n key for description label (null to omit)
+ *   descI18n      - i18n key for description text (null to omit)
+ *   workLabelI18n - i18n key for work label (null to omit)
+ *   workI18n      - i18n key for work details (null to omit)
  */
 
 const educationData = [
@@ -144,11 +147,14 @@ const projectsData = [
   {
     logo: 'iFLY',
     logoType: 'text',
-    name: 'Social Service Platform Development',
-    roleI18n: 'proj.role',
-    role: 'Core Developer',
+    nameI18n: 'proj.iflytek.name',
+    companyI18n: 'proj.company',
+    companyValueI18n: 'proj.iflytek.company',
     timeI18n: 'proj.time',
-    time: '2024.04 – 2024.08 · iFLYTEK, Zhengzhou Research Institute',
-    desc: 'Developed and maintained a comprehensive agricultural informatization management platform, implementing modules for land circulation, land trusteeship, map services, and customer service messaging. Responsible for the collection function module and customer service message system.'
+    time: '2024.04 – 2024.09',
+    descLabelI18n: 'proj.desc-label',
+    descI18n: 'proj.iflytek.desc',
+    workLabelI18n: 'proj.work',
+    workI18n: 'proj.iflytek.work'
   }
 ];

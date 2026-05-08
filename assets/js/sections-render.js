@@ -118,21 +118,34 @@ function renderProjects() {
     let html = '';
     projectsData.forEach(proj => {
         const logoHtml = proj.logoType === 'img'
-            ? `<img src="${proj.logo}" alt="${proj.name}" class="project-logo">`
+            ? `<img src="${proj.logo}" alt="" class="project-logo">`
             : `<div class="project-logo-text">${proj.logo}</div>`;
+
+        const companyHtml = proj.companyI18n
+            ? `<p class="project-company"><strong><span data-i18n="${proj.companyI18n}"></span><span data-i18n="${proj.companyValueI18n}"></span></strong></p>`
+            : '';
 
         const timeLabel = proj.timeI18n
             ? `<span data-i18n="${proj.timeI18n}"></span>`
+            : '';
+
+        const descHtml = proj.descI18n
+            ? `<p class="project-desc"><span data-i18n="${proj.descLabelI18n}"></span><span data-i18n="${proj.descI18n}"></span></p>`
+            : '';
+
+        const workHtml = proj.workI18n
+            ? `<p class="project-work"><span data-i18n="${proj.workLabelI18n}"></span><span data-i18n="${proj.workI18n}"></span></p>`
             : '';
 
         html += `
         <div class="project-item">
             ${logoHtml}
             <div class="project-info">
-                <h3 class="project-name">${proj.name}</h3>
-                <p class="project-role"><span data-i18n="${proj.roleI18n}"></span>${proj.role}</p>
+                <h3 class="project-name" data-i18n="${proj.nameI18n}"></h3>
+                ${companyHtml}
                 <p class="project-time">${timeLabel}${proj.time}</p>
-                <p class="project-desc">${proj.desc}</p>
+                ${descHtml}
+                ${workHtml}
             </div>
         </div>`;
     });
