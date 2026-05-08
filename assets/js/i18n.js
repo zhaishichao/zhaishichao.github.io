@@ -42,7 +42,7 @@ const I18N = {
     'edu.ms':                { en: 'M.S. in Artificial Intelligence', cn: '人工智能硕士' },
     'edu.bs':                { en: 'B.E. in Software Engineering', cn: '软件工程学士' },
     'edu.ms.note':           { en: 'Recommended for Graduate Admission', cn: '推免研究生' },
-    'edu.bs.note':           { en: 'Honors Bachelor\'s Degree (Top 3%)', cn: '荣誉学士学位（前3%）' },
+    'edu.bs.note':           { en: 'Honorary Bachelor\'s Degree (Top 3%)', cn: '荣誉学士学位（前3%）' },
     'edu.present':           { en: 'Present',           cn: '至今' },
 
     /* Honors */
@@ -71,7 +71,7 @@ const I18N = {
         cn: '优秀本科毕业生'
     },
     'honor.honors-degree': {
-        en: 'Honors Bachelor\'s Degree (Top 3%)',
+        en: 'Honorary Bachelor\'s Degree (Top 3%)',
         cn: '荣誉学士学位（前3%）'
     },
     'honor.scholarship': {
