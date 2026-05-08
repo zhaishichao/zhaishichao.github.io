@@ -64,14 +64,7 @@
     margin-bottom: var(--spacing-xs);
 }
 
-.project-time {
-    display: block;
-    font-size: var(--font-size-sm);
-    color: var(--color-primary);
-    font-weight: 500;
-    margin-bottom: var(--spacing-xs);
-}
-
+.project-time,
 .project-company {
     display: block;
     font-size: var(--font-size-sm);
