@@ -89,5 +89,5 @@
     font-size: var(--font-size-sm);
     color: var(--color-text-secondary);
     line-height: 1.6;
-    margin-bottom: var(--spacing-xs);
+    margin-top: var(--spacing-sm);
 }
