@@ -15,11 +15,17 @@
  */
 const readingTimelineData = [
   {
+    title: '毛泽东选集',
+    author: '毛泽东',
+    cover: 'imgs/cover/mzdxj.jpg',
+    date: null,
+    currentlyReading: true
+  },
+  {
     title: '小镇喧嚣',
     author: '吴毅',
     cover: 'imgs/cover/xzxx.jpg',
-    date: null,
-    currentlyReading: true
+    date: '2026-09-10'
   },
   {
     title: '基层中国的运行逻辑',
