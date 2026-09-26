@@ -36,6 +36,7 @@
  *   companyValueI18n - i18n key for company name (null to omit)
  *   timeI18n      - i18n key for time label (null to omit)
  *   time          - time range string (plain text)
+ *   timeEndI18n   - i18n key for time end suffix (e.g. "edu.present"), null for fixed range
  *   descLabelI18n - i18n key for description label (null to omit)
  *   descI18n      - i18n key for description text (null to omit)
  *   workLabelI18n - i18n key for work label (null to omit)
@@ -162,6 +163,21 @@ const patentsData = [
 ];
 
 const projectsData = [
+  {
+    logo: 'imgs/logo/NSFC-logo.png',
+    logoType: 'img',
+    type: 'project',
+    nameI18n: 'proj.nsfc.name',
+    companyI18n: null,
+    companyValueI18n: 'proj.nsfc.type',
+    timeI18n: 'proj.project-time',
+    time: '2025.06 – ',
+    timeEndI18n: 'edu.present',
+    descLabelI18n: 'proj.desc-label',
+    descI18n: 'proj.nsfc.desc',
+    workLabelI18n: 'proj.work',
+    workI18n: 'proj.nsfc.work'
+  },
   {
     logo: 'imgs/logo/ZEEKR-logo.png',
     logoType: 'img',

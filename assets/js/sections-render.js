@@ -121,8 +121,8 @@ function renderProjects() {
             ? `<img src="${proj.logo}" alt="" class="project-logo">`
             : `<div class="project-logo-text">${proj.logo}</div>`;
 
-        const companyHtml = proj.companyI18n
-            ? `<p class="project-company"><strong><span data-i18n="${proj.companyI18n}"></span><span data-i18n="${proj.companyValueI18n}"></span></strong></p>`
+        const companyHtml = proj.companyValueI18n
+            ? `<p class="project-company"><strong>${proj.companyI18n ? `<span data-i18n="${proj.companyI18n}"></span>` : ''}<span data-i18n="${proj.companyValueI18n}"></span></strong></p>`
             : '';
 
         /* Heading: internships show company first (large), projects show name first (large) */
@@ -134,6 +134,12 @@ function renderProjects() {
 
         const timeLabel = proj.timeI18n
             ? `<span data-i18n="${proj.timeI18n}"></span>`
+            : '';
+        const timeEndHtml = proj.timeEndI18n
+            ? `<span data-i18n="${proj.timeEndI18n}"></span>`
+            : '';
+        const timeHtml = (proj.timeI18n || proj.time || proj.timeEndI18n)
+            ? `<p class="project-time">${timeLabel}${proj.time}${timeEndHtml}</p>`
             : '';
 
         const descHtml = proj.descI18n
@@ -149,7 +155,7 @@ function renderProjects() {
             ${logoHtml}
             <div class="project-info">
                 ${headingHtml}
-                <p class="project-time">${timeLabel}${proj.time}</p>
+                ${timeHtml}
                 ${descHtml}
                 ${workHtml}
             </div>
