@@ -4,7 +4,7 @@ const I18N = {
     'nav.home':              { en: 'Home',              cn: '首页' },
     'nav.education':         { en: 'Education',         cn: '教育经历' },
     'nav.honors':            { en: 'Honors',            cn: '荣誉奖励' },
-    'nav.publications':      { en: 'Publications',      cn: '发表论文' },
+    'nav.publications':      { en: 'Research Achievements', cn: '科研成果' },
     'nav.projects':          { en: 'Projects',          cn: '项目经历' },
     'nav.reading':           { en: 'Reading',           cn: '阅读' },
     'nav.more':              { en: 'More',              cn: '更多' },
@@ -32,11 +32,12 @@ const I18N = {
     'research.evolutionary':  { en: 'Evolutionary Computation', cn: '进化计算' },
     'research.mo':            { en: 'Multi-objective Optimization', cn: '多目标优化' },
     'research.imbalanced':    { en: 'Imbalanced Learning', cn: '不平衡学习' },
+    'research.large-models':  { en: 'Large Language Models and Data Augmentation', cn: '大模型与数据增强' },
 
     /* Section titles */
     'section.education':     { en: 'Education',         cn: '教育经历' },
     'section.honors':        { en: 'Honors & Awards',   cn: '荣誉奖励' },
-    'section.publications':  { en: 'Publications',      cn: '发表论文' },
+    'section.publications':  { en: 'Research Achievements', cn: '科研成果' },
     'section.projects':      { en: 'Projects & Internships', cn: '项目与实习' },
     'section.reading':       { en: 'Reading',           cn: '阅读' },
 
@@ -91,10 +92,19 @@ const I18N = {
     'org.suda':              { en: 'Soochow University', cn: '苏州大学' },
 
     /* Publications */
+    'pub.papers':            { en: 'Publications',      cn: '发表论文' },
+    'pub.patents':           { en: 'Invention Patents', cn: '发明专利' },
     'pub.paper':             { en: 'Paper',             cn: '论文' },
     'pub.code':              { en: 'Code',              cn: '源码' },
     'pub.coming':            { en: 'Coming soon...',    cn: '敬请期待...' },
     'pub.mile-note':         { en: '(CAS Q1, Top Journal in Field, First Author)', cn: '（中科院一区，领域顶刊，第一作者）' },
+
+    /* Patents */
+    'patent.inventors-label': { en: 'Inventors:',       cn: '发明人：' },
+    'patent.number-label':    { en: 'Patent No.:',      cn: '专利号：' },
+    'patent.status.granted':  { en: 'Granted',          cn: '已授权' },
+    'patent.status.examining': { en: 'Under Examination', cn: '实审中' },
+    'patent.status.published': { en: 'Published',        cn: '已公开' },
 
     /* Projects */
     'proj.role':             { en: 'Role: ',            cn: '担任角色：' },

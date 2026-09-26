@@ -159,11 +159,56 @@ function renderProjects() {
     container.innerHTML = html;
 }
 
+/* ---------- Patents ---------- */
+function renderPatents() {
+    const container = document.getElementById('patent-list');
+    if (!container) return;
+
+    if (patentsData.length === 0) {
+        container.innerHTML = '<div class="pub-placeholder"><i class="fas fa-lightbulb"></i><p data-i18n="pub.coming">Coming soon...</p></div>';
+        return;
+    }
+
+    let html = '';
+    patentsData.forEach(p => {
+        const linksHtml = (p.links && p.links.length > 0)
+            ? '<div class="pub-links">' + p.links.map(l =>
+                `<a href="${l.href}" target="_blank" rel="noopener" class="btn-outline"><i class="fas ${l.icon}"></i> <span data-i18n="${l.i18nKey}"></span></a>`
+            ).join('') + '</div>'
+            : '';
+
+        const inventorsHtml = p.inventors
+            ? `<span data-i18n="patent.inventors-label"></span><span>${p.inventors}</span>&nbsp;·&nbsp;`
+            : '';
+
+        html += `
+        <div class="pub-item">
+            <div class="pub-info">
+                <div class="patent-row">
+                    <p class="patent-title">${p.title}</p>
+                    <p class="patent-meta">
+                        ${inventorsHtml}
+                        <span data-i18n="patent.number-label"></span><span>${p.number}</span>
+                        &nbsp;·&nbsp;
+                        <span>${p.date}</span>
+                        &nbsp;·&nbsp;
+                        <span class="patent-status" data-i18n="${p.statusI18n}"></span>
+                    </p>
+                </div>
+                ${linksHtml}
+            </div>
+        </div>`;
+    });
+
+    container.innerHTML = html;
+}
+
 /* ---------- Init ---------- */
 function renderAllSections() {
     renderEducation();
     renderHonors();
     renderPublications();
+    renderPatents();
     renderProjects();
 }
 

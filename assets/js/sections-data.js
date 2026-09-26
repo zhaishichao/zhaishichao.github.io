@@ -133,7 +133,7 @@ const publicationsData = [
   {
     cover: 'imgs/publication/The overall framework of MILE.png',
     coverAlt: 'MILE Framework',
-    reference: 'S. Zhai, R. Jiao, B. Xue, Y. Nojima and M. Zhang, "MILE: Multi-Expert Ensemble with Instance Selection for Multi-Class Imbalanced Learning," in IEEE Transactions on Evolutionary Computation, 2026, DOI: 10.1109/TEVC.2026.3682346',
+    reference: 'S. Zhai, R. Jiao, B. Xue, et al., "MILE: Multi-Expert Ensemble with Instance Selection for Multi-Class Imbalanced Learning," in IEEE Transactions on Evolutionary Computation, 2026, DOI: 10.1109/TEVC.2026.3682346',
     firstAuthor: 'S. Zhai',
     journal: 'IEEE Transactions on Evolutionary Computation',
     noteI18n: 'pub.mile-note',
@@ -141,6 +141,23 @@ const publicationsData = [
       { href: 'https://ieeexplore.ieee.org/document/11478499', icon: 'fa-file-pdf', i18nKey: 'pub.paper' },
       { href: 'https://github.com/FEATlab/MILE', icon: 'fa-code', i18nKey: 'pub.code' }
     ]
+  }
+];
+
+const patentsData = [
+  {
+    title: '一种基于多专家实例选择的非平衡分类方法',
+    inventors: '',
+    number: '202510554136.5[P]',
+    statusI18n: 'patent.status.published',
+    date: '2025-08-12'
+  },
+  {
+    title: '一种面向非平衡数据的多目标合成过采样方法',
+    inventors: '',
+    number: '202610346570.9[P]',
+    statusI18n: 'patent.status.published',
+    date: '2026-06-09'
   }
 ];
 

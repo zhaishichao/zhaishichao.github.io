@@ -78,10 +78,44 @@
 }
 
 .pub-note {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-base);
     font-weight: 700;
     color: #C00000;
     white-space: nowrap;
+}
+
+/* Subsection titles (Publications / Patents) */
+.pub-subsection-title {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-text);
+    margin: var(--spacing-lg) 0 var(--spacing-md);
+    padding-left: var(--spacing-sm);
+    border-left: 3px solid var(--color-accent);
+}
+
+/* Patent items */
+.patent-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: var(--spacing-sm) var(--spacing-md);
+}
+.patent-title {
+    font-size: var(--font-size-lg);
+    color: var(--color-text);
+    line-height: 1.4;
+    margin: 0;
+}
+.patent-meta {
+    font-size: var(--font-size-base);
+    color: var(--color-text);
+    line-height: 1.6;
+    margin: 0;
+}
+.patent-status {
+    color: var(--color-primary);
+    font-weight: 700;
 }
 
 /* Links row */
