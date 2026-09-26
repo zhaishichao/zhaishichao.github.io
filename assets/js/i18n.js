@@ -185,7 +185,7 @@ function applyLanguage(lang) {
 }
 
 function getCurrentLang() {
-    return localStorage.getItem('lang') || 'en';
+    return localStorage.getItem('lang') || 'cn';
 }
 
 function initI18N() {
