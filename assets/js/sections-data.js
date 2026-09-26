@@ -30,6 +30,7 @@
  * Project fields:
  *   logo          - text or image path for logo
  *   logoType      - "text" or "img"
+ *   type          - "internship" | "project" (internships display company first)
  *   nameI18n      - i18n key for project name
  *   companyI18n   - i18n key for company label (null to omit)
  *   companyValueI18n - i18n key for company name (null to omit)
@@ -145,8 +146,23 @@ const publicationsData = [
 
 const projectsData = [
   {
-    logo: 'iFLY',
-    logoType: 'text',
+    logo: 'imgs/logo/ZEEKR-logo.png',
+    logoType: 'img',
+    type: 'internship',
+    nameI18n: 'proj.zeekr.name',
+    companyI18n: 'proj.company',
+    companyValueI18n: 'proj.zeekr.company',
+    timeI18n: 'proj.time',
+    time: '2026.07 – 2026.10',
+    descLabelI18n: 'proj.desc-label',
+    descI18n: 'proj.zeekr.desc',
+    workLabelI18n: 'proj.work',
+    workI18n: 'proj.zeekr.work'
+  },
+  {
+    logo: 'imgs/logo/iFLY-logo.png',
+    logoType: 'img',
+    type: 'internship',
     nameI18n: 'proj.iflytek.name',
     companyI18n: 'proj.company',
     companyValueI18n: 'proj.iflytek.company',

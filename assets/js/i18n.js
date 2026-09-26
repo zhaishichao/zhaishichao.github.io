@@ -77,8 +77,8 @@ const I18N = {
         cn: '荣誉学士学位（前3%）'
     },
     'honor.scholarship': {
-        en: 'First-Class Graduate Scholarship (Top 5%)',
-        cn: '研究生一等学业奖学金（前5%）'
+        en: 'First-Class Scholarship (Top 5%)',
+        cn: '一等学业奖学金（前5%）'
     },
     'honor.times': {
         en: '{n} times',
@@ -92,9 +92,9 @@ const I18N = {
 
     /* Publications */
     'pub.paper':             { en: 'Paper',             cn: '论文' },
-    'pub.code':              { en: 'Code',              cn: '代码' },
+    'pub.code':              { en: 'Code',              cn: '源码' },
     'pub.coming':            { en: 'Coming soon...',    cn: '敬请期待...' },
-    'pub.mile-note':         { en: '(CAS Q1, Top Journal in Field, First Author)', cn: '（中科院一区Top，领域顶刊，第一作者）' },
+    'pub.mile-note':         { en: '(CAS Q1, Top Journal in Field, First Author)', cn: '（中科院一区，领域顶刊，第一作者）' },
 
     /* Projects */
     'proj.role':             { en: 'Role: ',            cn: '担任角色：' },
@@ -102,6 +102,12 @@ const I18N = {
     'proj.time':             { en: 'Internship Period: ', cn: '实习时间：' },
     'proj.desc-label':       { en: 'Description: ',     cn: '项目描述：' },
     'proj.work':             { en: 'Key Contributions: ', cn: '主要工作：' },
+
+    /* Project: ZEEKR */
+    'proj.zeekr.name':       { en: 'Zeekr Vehicle Exterior Image Data Project (Data Analyst)', cn: '极氪车辆外观图像数据项目（数据分析工程师）' },
+    'proj.zeekr.company':    { en: 'ZEEKR Intelligent Technology Co., Ltd.', cn: '极氪智能科技有限公司' },
+    'proj.zeekr.desc':       { en: 'Focused on key vehicle parts including the body, front, roof, and rear; responsible for image data cleaning, annotation, and algorithm-side data processing support, providing a high-quality, usable data foundation for the model training and iteration of algorithm engineers.', cn: '围绕车身、车头、车顶、车尾等关键部位，负责图像数据清洗、标注及算法侧数据处理支持，为算法工程师模型训练与迭代提供高质量、可用的数据基础。' },
+    'proj.zeekr.work':       { en: 'Responsible for cleaning and annotating vehicle exterior image data across key parts including the body, front, roof, and rear, processing 1,000+ images per day with a cumulative total of 35,000+ images and a 100% on-time delivery rate; performed deduplication, deblurring, outlier removal, format standardization, and label validation per project specifications, cleaning approximately 15% of low-quality/invalid data to improve the usability and consistency of training data; used annotation tools for bounding-box selection, classification, and attribute labeling, participated in 3 iterations of annotation rules, maintaining annotation accuracy above 98% and reducing the rework rate by about 20%.', cn: '负责车辆外观图像数据清洗与标注，覆盖车身、车头、车顶、车尾等关键部位，日均处理图像1000+张，累计完成3.5万+张，按时交付率100%；按项目规范执行去重、去模糊、异常样本剔除、格式统一与标签校验，清洗低质/无效数据约15%，提升训练数据可用性与一致性；使用标注工具完成目标框选、分类及属性标注，参与标注规则迭代3版，标注准确率稳定在98%以上，返工率降低约20%。' },
 
     /* Project: iFLYTEK */
     'proj.iflytek.name':     { en: 'Social Service Platform - Smart Agriculture Subsystem (Backend Developer)', cn: '社会化服务平台 - 智慧农业子系统（后端开发工程师）' },

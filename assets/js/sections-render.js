@@ -125,6 +125,13 @@ function renderProjects() {
             ? `<p class="project-company"><strong><span data-i18n="${proj.companyI18n}"></span><span data-i18n="${proj.companyValueI18n}"></span></strong></p>`
             : '';
 
+        /* Heading: internships show company first (large), projects show name first (large) */
+        const isInternship = proj.type === 'internship';
+        const headingHtml = isInternship
+            ? `<h3 class="project-name" data-i18n="${proj.companyValueI18n}"></h3>
+                <p class="project-company" data-i18n="${proj.nameI18n}"></p>`
+            : `<h3 class="project-name" data-i18n="${proj.nameI18n}"></h3>${companyHtml}`;
+
         const timeLabel = proj.timeI18n
             ? `<span data-i18n="${proj.timeI18n}"></span>`
             : '';
@@ -141,8 +148,7 @@ function renderProjects() {
         <div class="project-item">
             ${logoHtml}
             <div class="project-info">
-                <h3 class="project-name" data-i18n="${proj.nameI18n}"></h3>
-                ${companyHtml}
+                ${headingHtml}
                 <p class="project-time">${timeLabel}${proj.time}</p>
                 ${descHtml}
                 ${workHtml}
