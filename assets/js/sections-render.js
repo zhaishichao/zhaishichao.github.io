@@ -11,12 +11,15 @@ function renderEducation() {
             ? entry.dateEnd
             : `<span data-i18n="edu.present">Present</span>`;
         const dateStr = entry.dateStart + ' – ' + dateEndHtml;
+        const yearStr = entry.dateStart.substring(0, 4);
 
         html += `
         <div class="timeline-item">
-            <div class="timeline-dot"></div>
+            <div class="timeline-node">
+                <span class="timeline-year">${yearStr}</span>
+                <span class="timeline-range">${dateStr}</span>
+            </div>
             <div class="timeline-content">
-                <span class="timeline-date">${dateStr}</span>
                 <h3 class="timeline-school">
                     <a href="${entry.schoolUrl}" target="_blank" rel="noopener"><span data-i18n="${entry.schoolNameI18n}"></span></a>
                 </h3>

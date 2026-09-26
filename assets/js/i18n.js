@@ -107,7 +107,7 @@ const I18N = {
     'proj.work':             { en: 'Key Contributions: ', cn: '主要工作：' },
 
     /* Project: ZEEKR */
-    'proj.zeekr.name':       { en: 'Zeekr Vehicle Exterior Image Data Analysis', cn: '极氪车辆外观图像数据分析' },
+    'proj.zeekr.name':       { en: 'Zeekr Vehicle Exterior Image Data Analysis (Data Analyst)', cn: '极氪车辆外观图像数据分析（数据分析工程师）' },
     'proj.zeekr.company':    { en: 'ZEEKR Intelligent Technology Co., Ltd.', cn: '极氪智能科技有限公司' },
     'proj.zeekr.desc':       { en: 'Focused on key vehicle parts including the body, front, roof, and rear; responsible for image data cleaning, annotation, and algorithm-side data processing support, providing a high-quality, usable data foundation for the model training and iteration of algorithm engineers.', cn: '围绕车身、车头、车顶、车尾等关键部位，负责图像数据清洗、标注及算法侧数据处理支持，为算法工程师模型训练与迭代提供高质量、可用的数据基础。' },
     'proj.zeekr.work':       { en: 'Responsible for cleaning and annotating vehicle exterior image data across key parts including the body, front, roof, and rear, processing 1,000+ images per day with a cumulative total of 35,000+ images and a 100% on-time delivery rate; performed deduplication, deblurring, outlier removal, format standardization, and label validation per project specifications, cleaning approximately 15% of low-quality/invalid data to improve the usability and consistency of training data; used annotation tools for bounding-box selection, classification, and attribute labeling, participated in 3 iterations of annotation rules, maintaining annotation accuracy above 98% and reducing the rework rate by about 20%.', cn: '负责车辆外观图像数据清洗与标注，覆盖车身、车头、车顶、车尾等关键部位，日均处理图像1000+张，累计完成3.5万+张，按时交付率100%；按项目规范执行去重、去模糊、异常样本剔除、格式统一与标签校验，清洗低质/无效数据约15%，提升训练数据可用性与一致性；使用标注工具完成目标框选、分类及属性标注，参与标注规则迭代3版，标注准确率稳定在98%以上，返工率降低约20%。' },
