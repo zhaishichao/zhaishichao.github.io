@@ -17,10 +17,10 @@ const I18N = {
     'home.location-label':   { en: 'Location:',         cn: '现居地：' },
     'home.location-value':   { en: 'Suzhou, Jiangsu, China', cn: '中国 江苏 苏州' },
     'home.email-label':      { en: 'Email:',            cn: '邮箱：' },
-    'home.department-label': { en: 'Department:',       cn: '院部：' },
+    'home.department-label': { en: 'School:',       cn: '院部：' },
     'home.department-value': { en: 'School of Future Science and Engineering', cn: '未来科学与工程学院' },
     'home.lab-label':        { en: 'Laboratory:',       cn: '实验室：' },
-    'home.lab-value':        { en: 'The Key Laboratory of General Artificial Intelligence and Large Models', cn: '通用人工智能与大模型重点实验室' },
+    'home.lab-value':        { en: 'The Key Laboratory of General Artificial Intelligence and Large Language Models', cn: '通用人工智能与大语言模型重点实验室' },
     'home.advisor':          { en: 'Advisor:',          cn: '导师：' },
     'home.advisor-name':     { en: 'Prof. Ruwang Jiao', cn: '焦儒旺教授' },
     'home.research':         { en: 'Research Interests', cn: '研究方向' },
@@ -32,7 +32,7 @@ const I18N = {
     'research.evolutionary':  { en: 'Evolutionary Computation', cn: '演化计算' },
     'research.mo':            { en: 'Multi-objective Optimization', cn: '多目标优化' },
     'research.data-mining':   { en: 'Data Mining', cn: '数据挖掘' },
-    'research.large-models':  { en: 'Large Language Models and Data Augmentation', cn: '大模型与数据增强' },
+    'research.large-models':  { en: 'Large Language Models and Data Augmentation', cn: '大语言模型与数据增强' },
 
     /* Section titles */
     'section.education':     { en: 'Education',         cn: '教育经历' },
@@ -70,7 +70,7 @@ const I18N = {
         cn: '优秀共青团干部'
     },
     'honor.graduate': {
-        en: 'Outstanding Graduate',
+        en: 'Outstanding Undergraduate Graduate',
         cn: '优秀本科毕业生'
     },
     'honor.honors-degree': {
@@ -78,7 +78,7 @@ const I18N = {
         cn: '荣誉学士学位（前3%）'
     },
     'honor.scholarship': {
-        en: 'First-Class Scholarship (Top 5%)',
+        en: 'First-Class Academic Scholarship (Top 5%)',
         cn: '一等学业奖学金（前5%）'
     },
     'honor.times': {

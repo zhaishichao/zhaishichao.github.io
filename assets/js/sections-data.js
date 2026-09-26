@@ -66,8 +66,7 @@ const honorsData = [
   {
     icon: 'fa-certificate',
     color: 'gold',
-    date: '2024 – ',
-    dateEndI18n: 'edu.present',
+    date: '2024',
     nameI18n: 'honor.scholarship',
     orgI18n: 'org.suda',
     badge: null
