@@ -38,18 +38,6 @@
     width: auto;
 }
 
-/* Brand / name */
-.nav-brand {
-    font-size: var(--font-size-lg);
-    font-weight: 700;
-    color: var(--color-primary);
-    white-space: nowrap;
-    flex-shrink: 0;
-}
-.nav-brand:hover {
-    color: var(--color-primary-dark);
-}
-
 /* Navigation links (center) */
 .nav-links {
     display: flex;

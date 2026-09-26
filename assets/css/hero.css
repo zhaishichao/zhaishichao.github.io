@@ -88,13 +88,6 @@
     margin-top: -24px;
 }
 
-.hero-name a {
-    color: inherit;
-}
-.hero-name a:hover {
-    text-decoration: underline;
-}
-
 .hero-meta-table {
     margin: var(--spacing-sm) 0;
     padding: var(--spacing-md) var(--spacing-lg);

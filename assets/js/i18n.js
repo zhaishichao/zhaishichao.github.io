@@ -7,10 +7,8 @@ const I18N = {
     'nav.publications':      { en: 'Research Achievements', cn: '科研成果' },
     'nav.projects':          { en: 'Projects & Internships', cn: '项目实习' },
     'nav.reading':           { en: 'Reading',           cn: '阅读' },
-    'nav.more':              { en: 'More',              cn: '更多' },
 
     /* Home */
-    'home.greeting':         { en: "Hi, I'm",           cn: '你好，我是' },
     'home.name':             { en: 'Shichao Zhai（翟士超）', cn: '翟士超（Shichao Zhai）' },
     'home.role':             { en: 'M.S. Student', cn: '硕士研究生' },
     'home.university':       { en: 'Soochow University', cn: '苏州大学' },
@@ -25,8 +23,6 @@ const I18N = {
     'home.advisor':          { en: 'Advisor:',          cn: '导师：' },
     'home.advisor-name':     { en: 'Prof. Ruwang Jiao', cn: '焦儒旺教授' },
     'home.research':         { en: 'Research Interests', cn: '研究方向' },
-    'home.location':         { en: 'Suzhou, Jiangsu, China', cn: '中国 江苏 苏州' },
-    'home.contact':          { en: 'Contact',           cn: '联系方式' },
     'home.views':            { en: 'visits',            cn: '次访问' },
 
     /* Research interests */
@@ -82,10 +78,6 @@ const I18N = {
         en: 'First-Class Academic Scholarship (Top 5%)',
         cn: '一等学业奖学金（前5%）'
     },
-    'honor.times': {
-        en: '{n} times',
-        cn: '{n}次'
-    },
 
     /* Organizations */
     'org.lanqiao':           { en: 'Lanqiao Cup Organizing Committee', cn: '蓝桥杯大赛组委会' },
@@ -108,7 +100,6 @@ const I18N = {
     'patent.status.published': { en: 'Published',        cn: '已公开' },
 
     /* Projects */
-    'proj.role':             { en: 'Role: ',            cn: '担任角色：' },
     'proj.company':          { en: 'Company / Dept.: ', cn: '公司/部门：' },
     'proj.time':             { en: 'Internship Period: ', cn: '实习时间：' },
     'proj.project-time':     { en: 'Project Period: ',  cn: '项目时间：' },
