@@ -18,13 +18,18 @@
     .hero-grid {
         flex-direction: row;
         text-align: left;
-        align-items: start;
+        align-items: center;
     }
 }
 
 /* Avatar */
 .hero-avatar {
     flex-shrink: 0;
+}
+@media (min-width: 768px) {
+    .hero-avatar {
+        transform: translateY(-16px);
+    }
 }
 .avatar-img {
     width: 200px;
