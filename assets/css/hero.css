@@ -118,11 +118,11 @@
     word-break: break-word;
 }
 a.hero-meta-value {
-    text-decoration: none;
+    text-decoration: underline;
     transition: color var(--transition-fast);
 }
 a.hero-meta-value:hover {
-    text-decoration: underline;
+    color: var(--color-primary-dark);
 }
 
 /* Research interests */
