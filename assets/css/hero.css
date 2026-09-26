@@ -25,11 +25,34 @@
 /* Avatar */
 .hero-avatar {
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-lg);
 }
 @media (min-width: 768px) {
     .hero-avatar {
         transform: translateY(-20px);
     }
+}
+.avatar-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+.avatar-school {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--color-text);
+    text-decoration: none;
+}
+.avatar-school:hover {
+    color: var(--color-primary);
+}
+.avatar-role {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
 }
 .avatar-img {
     width: 200px;
@@ -60,43 +83,53 @@
     font-size: var(--font-size-4xl);
     font-weight: 700;
     color: var(--color-text);
+    text-align: center;
     margin-bottom: var(--spacing-xs);
+    margin-top: -24px;
 }
 
-.hero-role {
-    font-size: var(--font-size-xl);
-    color: var(--color-primary);
-    font-weight: 500;
-    margin-bottom: var(--spacing-sm);
+.hero-name a {
+    color: inherit;
+}
+.hero-name a:hover {
+    text-decoration: underline;
 }
 
-.hero-affiliation {
-    font-size: var(--font-size-lg);
-    color: var(--color-text-secondary);
-    margin-bottom: var(--spacing-sm);
+.hero-meta-table {
+    margin: var(--spacing-sm) 0;
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
 }
-
-.hero-meta {
-    margin: var(--spacing-xs) 0;
+.hero-meta-row {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
     font-size: var(--font-size-base);
 }
-
-/* Advisor */
-.hero-advisor {
-    margin: var(--spacing-md) 0;
-    padding: var(--spacing-sm) var(--spacing-md);
-    border-left: 3px solid var(--color-accent);
-    background: var(--color-bg-secondary);
-    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-    display: inline-block;
-}
-.advisor-label {
+.hero-meta-label {
+    flex: 0 0 110px;
     font-weight: 600;
     color: var(--color-text);
+    text-align: left;
 }
-.advisor-name {
-    font-weight: 700;
+.hero-meta-value {
+    flex: 1;
+    min-width: 0;
+    font-weight: 500;
     color: var(--color-primary);
+    text-align: left;
+    word-break: break-word;
+}
+a.hero-meta-value {
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+a.hero-meta-value:hover {
+    text-decoration: underline;
 }
 
 /* Research interests */

@@ -11,7 +11,8 @@ const I18N = {
 
     /* Home */
     'home.greeting':         { en: "Hi, I'm",           cn: '你好，我是' },
-    'home.role':             { en: 'M.S. in Artificial Intelligence', cn: '人工智能硕士' },
+    'home.name':             { en: 'Shichao Zhai（翟士超）', cn: '翟士超（Shichao Zhai）' },
+    'home.role':             { en: 'M.S. Student', cn: '硕士研究生' },
     'home.university':       { en: 'Soochow University', cn: '苏州大学' },
     'home.university-haut':  { en: 'Henan University of Technology', cn: '河南工业大学' },
     'home.location-label':   { en: 'Location:',         cn: '现居地：' },
@@ -20,7 +21,7 @@ const I18N = {
     'home.department-label': { en: 'School:',       cn: '院部：' },
     'home.department-value': { en: 'School of Future Science and Engineering', cn: '未来科学与工程学院' },
     'home.lab-label':        { en: 'Laboratory:',       cn: '实验室：' },
-    'home.lab-value':        { en: 'The Key Laboratory of General Artificial Intelligence and Large Language Models', cn: '通用人工智能与大语言模型重点实验室' },
+    'home.lab-value':        { en: 'Future Evolutionary Intelligence Laboratory', cn: '未来演化智能实验室' },
     'home.advisor':          { en: 'Advisor:',          cn: '导师：' },
     'home.advisor-name':     { en: 'Prof. Ruwang Jiao', cn: '焦儒旺教授' },
     'home.research':         { en: 'Research Interests', cn: '研究方向' },

@@ -34,10 +34,9 @@
     <!-- ===== Navigation ===== -->
     <nav class="navbar">
         <div class="nav-inner">
-            <a href="blog/index.html" class="btn-blog" data-i18n-title="blog.title">
-                <i class="fas fa-blog"></i> <span data-i18n="blog.title">Blog</span>
+            <a href="https://www.suda.edu.cn/" target="_blank" rel="noopener" class="nav-logo">
+                <img src="imgs/logo/suda_logo.jpeg" alt="Soochow University">
             </a>
-
             <div class="nav-links">
                 <a href="#home" class="nav-link active" data-i18n="nav.home">Home</a>
                 <a href="#education" class="nav-link" data-i18n="nav.education">Education</a>
@@ -47,12 +46,6 @@
                 <a href="#reading" class="nav-link" data-i18n="nav.reading">Reading</a>
             </div>
 
-            <!-- "More" dropdown (hidden by default) -->
-            <div class="nav-more" aria-hidden="true">
-                <button class="nav-more-toggle" data-i18n="nav.more">More <i class="fas fa-chevron-down"></i></button>
-                <div class="nav-more-dropdown"></div>
-            </div>
-
             <!-- Right actions -->
             <div class="nav-actions">
                 <button id="lang-toggle" class="lang-btn" aria-label="Toggle language">EN</button>
@@ -60,6 +53,9 @@
                 <button class="hamburger" aria-label="Toggle menu">
                     <span></span><span></span><span></span>
                 </button>
+                <a href="blog/index.html" class="btn-blog" data-i18n-title="blog.title">
+                    <i class="fas fa-blog"></i> <span data-i18n="blog.title">Blog</span>
+                </a>
             </div>
         </div>
     </nav>
@@ -83,43 +79,35 @@
                 <div class="hero-grid">
                     <div class="hero-avatar">
                         <img src="imgs/profile.jpg" alt="Shichao Zhai" class="avatar-img" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22><rect fill=%22%23e0e4e8%22 width=%22200%22 height=%22200%22/><text x=%22100%22 y=%22110%22 text-anchor=%22middle%22 font-size=%2280%22>👤</text></svg>'">
+                        <div class="avatar-info">
+                            <a href="https://www.suda.edu.cn/" target="_blank" rel="noopener" class="avatar-school"><span data-i18n="home.university">Soochow University</span></a>
+                            <span class="avatar-role" data-i18n="home.role">M.S. Student</span>
+                        </div>
                     </div>
                     <div class="hero-info">
-                        <h1 class="hero-name">Shichao Zhai <span style="font-weight:400;color:var(--color-text-secondary);">(翟士超)</span></h1>
-                        <p class="hero-role" data-i18n="home.role">Graduate Student in Artificial Intelligence</p>
-                        <p class="hero-affiliation">
-                            <a href="https://www.suda.edu.cn/" target="_blank" rel="noopener" class="link-highlight"><span data-i18n="home.university">Soochow University</span></a>
-                            &nbsp;·&nbsp; <span data-i18n="home.location">Suzhou, Jiangsu, China</span>
-                        </p>
+                        <h1 class="hero-name" data-i18n="home.name">Shichao Zhai（翟士超）</h1>
 
-                        <div class="hero-meta">
-                            <span class="advisor-label" data-i18n="home.location-label">Location:</span>
-                            &nbsp;
-                            <span class="advisor-name" data-i18n="home.location-value">Suzhou, Jiangsu, China</span>
-                        </div>
-
-                        <div class="hero-meta">
-                            <span class="advisor-label" data-i18n="home.email-label">Email:</span>
-                            &nbsp;
-                            <a href="mailto:shichao.zhai@gmail.com" class="advisor-name link-highlight">shichao.zhai@gmail.com</a>
-                        </div>
-
-                        <div class="hero-meta">
-                            <span class="advisor-label" data-i18n="home.department-label">School:</span>
-                            &nbsp;
-                            <a href="https://future.suda.edu.cn/" target="_blank" rel="noopener" class="advisor-name link-highlight"><span data-i18n="home.department-value">School of Future Science and Engineering</span></a>
-                        </div>
-
-                        <div class="hero-meta">
-                            <span class="advisor-label" data-i18n="home.lab-label">Laboratory:</span>
-                            &nbsp;
-                            <span class="advisor-name" data-i18n="home.lab-value">The Key Laboratory of General Artificial Intelligence and Large Language Models</span>
-                        </div>
-
-                        <div class="hero-advisor">
-                            <span class="advisor-label" data-i18n="home.advisor">Advisor:</span>
-                            &nbsp;
-                            <a href="https://web.suda.edu.cn/rwjiao/" target="_blank" rel="noopener" class="advisor-name link-highlight"><span data-i18n="home.advisor-name">Prof. Ruwang Jiao</span></a>
+                        <div class="hero-meta-table">
+                            <div class="hero-meta-row">
+                                <span class="hero-meta-label" data-i18n="home.location-label">Location:</span>
+                                <span class="hero-meta-value" data-i18n="home.location-value">Suzhou, Jiangsu, China</span>
+                            </div>
+                            <div class="hero-meta-row">
+                                <span class="hero-meta-label" data-i18n="home.email-label">Email:</span>
+                                <a href="mailto:shichao.zhai@gmail.com" class="hero-meta-value">shichao.zhai@gmail.com</a>
+                            </div>
+                            <div class="hero-meta-row">
+                                <span class="hero-meta-label" data-i18n="home.department-label">School:</span>
+                                <a href="https://future.suda.edu.cn/" target="_blank" rel="noopener" class="hero-meta-value"><span data-i18n="home.department-value">School of Future Science and Engineering</span></a>
+                            </div>
+                            <div class="hero-meta-row">
+                                <span class="hero-meta-label" data-i18n="home.lab-label">Laboratory:</span>
+                                <span class="hero-meta-value" data-i18n="home.lab-value">Future Evolutionary Intelligence Laboratory</span>
+                            </div>
+                            <div class="hero-meta-row">
+                                <span class="hero-meta-label" data-i18n="home.advisor">Advisor:</span>
+                                <a href="https://web.suda.edu.cn/rwjiao/" target="_blank" rel="noopener" class="hero-meta-value"><span data-i18n="home.advisor-name">Prof. Ruwang Jiao</span></a>
+                            </div>
                         </div>
 
                         <div class="hero-research">
