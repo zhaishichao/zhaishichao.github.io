@@ -6,6 +6,7 @@
 Object.assign(I18N, {
 
     /* Blog landing */
+    'blog.title-maint':    { en: 'Personal Blog (Under Maintenance)', cn: '个人博客（维护中）' },
     'blog.subtitle':       { en: 'Reading, Traveling, and Everyday Life', cn: '读万卷书，行万里路，品味日常' },
     'blog.reading':         { en: 'Reading Notes',     cn: '读万卷书' },
     'blog.travel':          { en: 'Travel Diaries',    cn: '行万里路' },
